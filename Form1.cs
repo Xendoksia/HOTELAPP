@@ -16,7 +16,7 @@ namespace HOTELAPP
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             Panel panel = (Panel)sender;
-
+            // Yuvarlaklýk varmý riad
             int borderRadius = 50; // Yuvarlaklýk miktarý, isteðe baðlý olarak ayarlanabilir.
             int borderWidth = 30; // Kenarlýk kalýnlýðý
             panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
