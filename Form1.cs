@@ -18,8 +18,8 @@ namespace HOTELAPP
             Panel panel = (Panel)sender;
             // Yuvarlaklýk varmý riad
             int borderRadius = 50; // Yuvarlaklýk miktarý, isteðe baðlý olarak ayarlanabilir.
-            int borderWidth = 30; // Kenarlýk kalýnlýðý
-            panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
+            int borderWidth = 20; // Kenarlýk kalýnlýðý
+            panel1.BackColor = Color.FromArgb(200, 0, 0, 0);
            
 
             // Panelin kenarlarýna yuvarlaklýk efektini uyguluyoruz.
@@ -33,7 +33,7 @@ namespace HOTELAPP
                 borderPath.AddArc(borderRectangle.X, borderRectangle.Y + borderRectangle.Height - borderRadius, borderRadius, borderRadius, 90, 90); // Sol alt köþe
                 borderPath.CloseAllFigures();
 
-                using (Pen pen = new Pen(Color.Blue, borderWidth)) // Border rengini ve kalýnlýðý ayarlýyoruz
+                using (Pen pen = new Pen(Color.FromArgb(152, 255, 242), borderWidth)) // Border rengini ve kalýnlýðý ayarlýyoruz
                 {
                     e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
                     e.Graphics.DrawPath(pen, borderPath);
@@ -41,16 +41,7 @@ namespace HOTELAPP
             }
         }
 
-        protected override void OnPaintBackground(PaintEventArgs e)
-        {
-            // Panelin arka planýný boyamadan önce base sýnýfýndaki OnPaintBackground metodu çaðrýlmalýdýr.
-            base.OnPaintBackground(e);
-
-            using (LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, Color.Blue, Color.Turquoise, 120F))
-            {
-                e.Graphics.FillRectangle(brush, this.ClientRectangle);
-            }
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -58,6 +49,11 @@ namespace HOTELAPP
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
