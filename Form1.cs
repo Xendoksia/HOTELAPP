@@ -3,7 +3,6 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-// elma armyt
 namespace HOTELAPP
 {
     public partial class Form1 : Form
@@ -51,6 +50,16 @@ namespace HOTELAPP
             {
                 e.Graphics.FillRectangle(brush, this.ClientRectangle);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }
