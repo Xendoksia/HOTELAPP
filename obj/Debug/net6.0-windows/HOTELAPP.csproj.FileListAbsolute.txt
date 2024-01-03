@@ -16,3 +16,4 @@ C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\refint\HOTELAP
 C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.pdb
 C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.genruntimeconfig.cache
 C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\ref\HOTELAPP.dll
+C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Form2.resources

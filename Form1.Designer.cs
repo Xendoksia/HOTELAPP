@@ -31,22 +31,20 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonz1 = new Custom_Controls_in_CS.ButtonZ();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Controls.Add(this.buttonz1);
+            this.panel1.Controls.Add(this.rjButton1);
             this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label2);
@@ -64,10 +62,10 @@
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Location = new System.Drawing.Point(198, 399);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(78, 15);
+            this.linkLabel1.Size = new System.Drawing.Size(77, 15);
             this.linkLabel1.TabIndex = 6;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Register here.";
+            this.linkLabel1.Text = "Sign Up here.";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label3
@@ -80,16 +78,6 @@
             this.label3.Size = new System.Drawing.Size(78, 15);
             this.label3.TabIndex = 5;
             this.label3.Text = "Are you new?";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(183, 326);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Enter";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox2
             // 
@@ -136,35 +124,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID Number";
             // 
-            // buttonz1
+            // rjButton1
             // 
-            this.buttonz1.BackColor = System.Drawing.Color.Transparent;
-            this.buttonz1.BorderColor = System.Drawing.Color.Transparent;
-            this.buttonz1.BorderWidth = 2;
-            this.buttonz1.ButtonShape = Custom_Controls_in_CS.ButtonZ.ButtonsShapes.Rect;
-            this.buttonz1.ButtonText = "";
-            this.buttonz1.EndColor = System.Drawing.Color.MidnightBlue;
-            this.buttonz1.FlatAppearance.BorderSize = 0;
-            this.buttonz1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.buttonz1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.buttonz1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonz1.GradientAngle = 90;
-            this.buttonz1.Location = new System.Drawing.Point(264, 317);
-            this.buttonz1.MouseClickColor1 = System.Drawing.Color.Yellow;
-            this.buttonz1.MouseClickColor2 = System.Drawing.Color.Red;
-            this.buttonz1.MouseHoverColor1 = System.Drawing.Color.Turquoise;
-            this.buttonz1.MouseHoverColor2 = System.Drawing.Color.DarkSlateGray;
-            this.buttonz1.Name = "buttonz1";
-            this.buttonz1.ShowButtontext = true;
-            this.buttonz1.Size = new System.Drawing.Size(100, 40);
-            this.buttonz1.StartColor = System.Drawing.Color.DodgerBlue;
-            this.buttonz1.TabIndex = 1;
-            this.buttonz1.Text = "buttonz1";
-            this.buttonz1.TextLocation_X = 32;
-            this.buttonz1.TextLocation_Y = 18;
-            this.buttonz1.Transparent1 = 250;
-            this.buttonz1.Transparent2 = 250;
-            this.buttonz1.UseVisualStyleBackColor = false;
+            this.rjButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton1.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.rjButton1.BorderRadius = 10;
+            this.rjButton1.BorderSize = 3;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Location = new System.Drawing.Point(157, 318);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(133, 47);
+            this.rjButton1.TabIndex = 7;
+            this.rjButton1.Text = "Sign in";
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -176,7 +152,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1246, 609);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -191,9 +167,8 @@
         private TextBox textBox1;
         private Label label2;
         private Label label1;
-        private Button button1;
         private LinkLabel linkLabel1;
         private Label label3;
-        private Custom_Controls_in_CS.ButtonZ buttonz1;
+        private CustomControls.RJControls.RJButton rjButton1;
     }
 }
