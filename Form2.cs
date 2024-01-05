@@ -29,8 +29,8 @@ namespace HOTELAPP
             // Arka plan rengini gradient olarak ayarlamak için bir LinearGradientBrush kullanacağız.
             LinearGradientBrush gradientBrush = new LinearGradientBrush(
                 this.ClientRectangle,
-                Color.Purple,   
-                Color.Turquoise,      
+                Color.Purple,
+                Color.Turquoise,
                 LinearGradientMode.Vertical);  // Dikey gradient
 
             // Arka plan rengini belirtilen brush ile ayarla

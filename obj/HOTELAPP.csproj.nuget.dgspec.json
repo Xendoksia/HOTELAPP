@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Deniz\\Desktop\\HOTELAPP\\HOTELAPP\\HOTELAPP.csproj": {}
+    "E:\\VS Projeler\\HOTELAPP\\HOTELAPP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Deniz\\Desktop\\HOTELAPP\\HOTELAPP\\HOTELAPP.csproj": {
+    "E:\\VS Projeler\\HOTELAPP\\HOTELAPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Deniz\\Desktop\\HOTELAPP\\HOTELAPP\\HOTELAPP.csproj",
+        "projectUniqueName": "E:\\VS Projeler\\HOTELAPP\\HOTELAPP.csproj",
         "projectName": "HOTELAPP",
-        "projectPath": "C:\\Users\\Deniz\\Desktop\\HOTELAPP\\HOTELAPP\\HOTELAPP.csproj",
-        "packagesPath": "C:\\Users\\Deniz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Deniz\\Desktop\\HOTELAPP\\HOTELAPP\\obj\\",
+        "projectPath": "E:\\VS Projeler\\HOTELAPP\\HOTELAPP.csproj",
+        "packagesPath": "C:\\Users\\emree\\.nuget\\packages\\",
+        "outputPath": "E:\\VS Projeler\\HOTELAPP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Deniz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\emree\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,6 +43,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -62,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

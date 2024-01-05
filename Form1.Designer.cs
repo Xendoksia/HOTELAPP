@@ -28,136 +28,141 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            rjButton1 = new CustomControls.RJControls.RJButton();
+            linkLabel1 = new LinkLabel();
+            label3 = new Label();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            label2 = new Label();
+            label1 = new Label();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Controls.Add(this.rjButton1);
-            this.panel1.Controls.Add(this.linkLabel1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Location = new System.Drawing.Point(398, 78);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(438, 479);
-            this.panel1.TabIndex = 0;
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Location = new System.Drawing.Point(198, 399);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(77, 15);
-            this.linkLabel1.TabIndex = 6;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Sign Up here.";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.label3.Location = new System.Drawing.Point(114, 399);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 15);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Are you new?";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(46, 245);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(313, 46);
-            this.textBox2.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(46, 122);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(313, 44);
-            this.textBox1.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Sitka Heading", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.label2.Location = new System.Drawing.Point(46, 207);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 29);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Password";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Sitka Heading", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.AntiqueWhite;
-            this.label1.Location = new System.Drawing.Point(46, 82);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID Number";
+            panel1.BackColor = Color.WhiteSmoke;
+            panel1.Controls.Add(rjButton1);
+            panel1.Controls.Add(linkLabel1);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label1);
+            panel1.Cursor = Cursors.IBeam;
+            panel1.ForeColor = SystemColors.ActiveCaptionText;
+            panel1.Location = new Point(455, 104);
+            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(501, 639);
+            panel1.TabIndex = 0;
             // 
             // rjButton1
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.rjButton1.BorderRadius = 10;
-            this.rjButton1.BorderSize = 3;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(157, 318);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(133, 47);
-            this.rjButton1.TabIndex = 7;
-            this.rjButton1.Text = "Sign in";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
+            rjButton1.BackColor = Color.MediumSlateBlue;
+            rjButton1.BackgroundColor = Color.MediumSlateBlue;
+            rjButton1.BorderColor = Color.LightSkyBlue;
+            rjButton1.BorderRadius = 10;
+            rjButton1.BorderSize = 3;
+            rjButton1.FlatAppearance.BorderSize = 0;
+            rjButton1.FlatStyle = FlatStyle.Flat;
+            rjButton1.ForeColor = Color.White;
+            rjButton1.Location = new Point(179, 424);
+            rjButton1.Margin = new Padding(3, 4, 3, 4);
+            rjButton1.Name = "rjButton1";
+            rjButton1.Size = new Size(152, 63);
+            rjButton1.TabIndex = 7;
+            rjButton1.Text = "Sign in";
+            rjButton1.TextColor = Color.White;
+            rjButton1.UseVisualStyleBackColor = false;
+            rjButton1.Click += button1_Click;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.BackColor = Color.Transparent;
+            linkLabel1.Location = new Point(226, 532);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(97, 20);
+            linkLabel1.TabIndex = 6;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Sign Up here.";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.ForeColor = Color.AntiqueWhite;
+            label3.Location = new Point(130, 532);
+            label3.Name = "label3";
+            label3.Size = new Size(98, 20);
+            label3.TabIndex = 5;
+            label3.Text = "Are you new?";
+            // 
+            // textBox2
+            // 
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
+            textBox2.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Location = new Point(53, 327);
+            textBox2.Margin = new Padding(3, 4, 3, 4);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(357, 61);
+            textBox2.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
+            textBox1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Location = new Point(53, 163);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(357, 58);
+            textBox1.TabIndex = 2;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Sitka Heading", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.AntiqueWhite;
+            label2.Location = new Point(53, 276);
+            label2.Name = "label2";
+            label2.Size = new Size(120, 36);
+            label2.TabIndex = 1;
+            label2.Text = "Password";
+            label2.Click += label2_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Sitka Heading", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.AntiqueWhite;
+            label1.Location = new Point(53, 109);
+            label1.Name = "label1";
+            label1.Size = new Size(137, 36);
+            label1.TabIndex = 0;
+            label1.Text = "ID Number";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.BackgroundImage = global::HOTELAPP.Properties.Resources.wallpaperflare1;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1246, 609);
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "Form1";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
+            AutoValidate = AutoValidate.EnablePreventFocusChange;
+            BackgroundImage = Properties.Resources.wallpaperflare1;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1424, 812);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "Form1";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

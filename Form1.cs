@@ -1,4 +1,5 @@
 using System;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
@@ -13,6 +14,8 @@ namespace HOTELAPP
             panel1.Paint += panel1_Paint;
         }
 
+
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             Panel panel = (Panel)sender;
@@ -20,7 +23,7 @@ namespace HOTELAPP
             int borderRadius = 50; // Yuvarlaklýk miktarý, isteðe baðlý olarak ayarlanabilir.
             int borderWidth = 20; // Kenarlýk kalýnlýðý
             panel1.BackColor = Color.FromArgb(200, 0, 0, 0);
-           
+
 
             // Panelin kenarlarýna yuvarlaklýk efektini uyguluyoruz.
             using (GraphicsPath borderPath = new GraphicsPath())
@@ -41,10 +44,45 @@ namespace HOTELAPP
             }
         }
 
-        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
+            SqlConnection sqlConnection = null;
+            
+            try
+            {
+                sqlConnection = new SqlConnection(@"Data Source = HERO\SQLEXPRESS;Initial Catalog = userTable; Integrated Security = True");
+                sqlConnection.Open();
+                SqlCommand userCmd = new SqlCommand("SELECT Username, Password FROM userTable", sqlConnection);
+                SqlDataReader userTable = userCmd.ExecuteReader();
+
+                string usernameText = textBox1.Text, passwordText = textBox2.Text;
+
+                while (userTable.Read())
+                {
+
+                    if (usernameText == userTable[0].ToString() && passwordText == userTable[1].ToString())
+                    {
+                        MessageBox.Show("giriþ yapýldý");
+                        return;
+                    }
+                }
+                MessageBox.Show("not found");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("sql yüklenemedi");
+            }
+            finally
+            {
+                if (sqlConnection != null)
+                {
+                    sqlConnection.Close();
+                }
+            }
+                
+            
 
         }
 

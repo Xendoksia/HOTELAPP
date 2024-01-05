@@ -17,3 +17,29 @@ C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.pdb
 C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.genruntimeconfig.cache
 C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\ref\HOTELAPP.dll
 C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Form2.resources
+E:\VS Projeler\HOTELAPP\bin\Debug\net6.0-windows\HOTELAPP.exe
+E:\VS Projeler\HOTELAPP\bin\Debug\net6.0-windows\HOTELAPP.deps.json
+E:\VS Projeler\HOTELAPP\bin\Debug\net6.0-windows\HOTELAPP.runtimeconfig.json
+E:\VS Projeler\HOTELAPP\bin\Debug\net6.0-windows\HOTELAPP.dll
+E:\VS Projeler\HOTELAPP\bin\Debug\net6.0-windows\HOTELAPP.pdb
+E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Form1.resources
+E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Form2.resources
+E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Properties.Resources.resources
+E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.csproj.GenerateResource.cache
+E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.GeneratedMSBuildEditorConfig.editorconfig
+E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.AssemblyInfoInputs.cache
+E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.AssemblyInfo.cs
+E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.csproj.CoreCompileInputs.cache
+E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.dll
+E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\refint\HOTELAPP.dll
+E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.pdb
+E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.genruntimeconfig.cache
+E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\ref\HOTELAPP.dll
+E:\VS Projeler\HOTELAPP\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+E:\VS Projeler\HOTELAPP\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+E:\VS Projeler\HOTELAPP\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+E:\VS Projeler\HOTELAPP\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+E:\VS Projeler\HOTELAPP\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\VS Projeler\HOTELAPP\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.csproj.AssemblyReference.cache
+E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.csproj.CopyComplete
