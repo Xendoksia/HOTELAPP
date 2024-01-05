@@ -86,12 +86,7 @@ namespace HOTELAPP
 
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            
-            Form2 f2 = new();
-            f2.Show();
-        }
+       
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -105,14 +100,21 @@ namespace HOTELAPP
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBox1.Checked) 
+            if (checkBox1.Checked)
             {
-                pw1.UseSystemPasswordChar= true;
+                pw1.UseSystemPasswordChar = true;
+                
             }
             else
             {
-                pw1.UseSystemPasswordChar= false;
+                pw1.UseSystemPasswordChar = false;
             }
+        }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.Show();
         }
     }
 }
