@@ -50,3 +50,4 @@ C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\bin\Debug\net6.0-windows\runtimes\win-x
 C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.csproj.CopyComplete
+C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Form3.resources

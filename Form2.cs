@@ -33,7 +33,7 @@ namespace HOTELAPP
             this.BackgroundImage = CreateBackgroundImage(this.ClientRectangle.Size, gradientBrush);
         }
 
-        private Bitmap CreateBackgroundImage(Size size, Brush brush)
+        public Bitmap CreateBackgroundImage(Size size, Brush brush)
         {
             // Bir bitmap oluştur
             Bitmap bitmap = new Bitmap(size.Width, size.Height);
