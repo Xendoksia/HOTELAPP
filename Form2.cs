@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace HOTELAPP
 {
@@ -17,11 +18,6 @@ namespace HOTELAPP
         {
             InitializeComponent();
             SetGradientBackground();
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void SetGradientBackground()
@@ -70,6 +66,11 @@ namespace HOTELAPP
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }

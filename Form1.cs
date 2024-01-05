@@ -57,7 +57,7 @@ namespace HOTELAPP
                 SqlCommand userCmd = new SqlCommand("SELECT Username, Password FROM userTable", sqlConnection);
                 SqlDataReader userTable = userCmd.ExecuteReader();
 
-                string usernameText = textBox1.Text, passwordText = textBox2.Text;
+                string usernameText = textBox1.Text, passwordText = pw1.Text;
 
                 while (userTable.Read())
                 {
@@ -95,6 +95,23 @@ namespace HOTELAPP
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked) 
+            {
+                pw1.UseSystemPasswordChar= true;
+            }
+            else
+            {
+                pw1.UseSystemPasswordChar= false;
+            }
         }
     }
 }

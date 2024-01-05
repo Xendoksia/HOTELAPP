@@ -43,3 +43,10 @@ E:\VS Projeler\HOTELAPP\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1
 E:\VS Projeler\HOTELAPP\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.csproj.AssemblyReference.cache
 E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.csproj.CopyComplete
+C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.csproj.CopyComplete
