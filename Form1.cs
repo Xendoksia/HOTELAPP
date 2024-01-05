@@ -88,7 +88,8 @@ namespace HOTELAPP
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Form2 f2 = new Form2();
+            
+            Form2 f2 = new();
             f2.Show();
         }
 
