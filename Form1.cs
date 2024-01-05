@@ -49,10 +49,10 @@ namespace HOTELAPP
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection sqlConnection = null;
-            
+
             try
             {
-                sqlConnection = new SqlConnection(@"Data Source = HERO\SQLEXPRESS;Initial Catalog = userTable; Integrated Security = True");
+                sqlConnection = new SqlConnection(@"Data Source=HERO\SQLEXPRESS;Initial Catalog=SQLHotel;Integrated Security=True");
                 sqlConnection.Open();
                 SqlCommand userCmd = new SqlCommand("SELECT Username, Password FROM userTable", sqlConnection);
                 SqlDataReader userTable = userCmd.ExecuteReader();
@@ -64,7 +64,10 @@ namespace HOTELAPP
 
                     if (usernameText == userTable[0].ToString() && passwordText == userTable[1].ToString())
                     {
-                        MessageBox.Show("giriþ yapýldý");
+
+                        Form3 f3 = new Form3();//Create the new form
+                        f3.Show();//display Form2 to the user
+                        this.Close();
                         return;
                     }
                 }
@@ -81,12 +84,12 @@ namespace HOTELAPP
                     sqlConnection.Close();
                 }
             }
-                
-            
+
+
 
         }
 
-       
+
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -103,7 +106,7 @@ namespace HOTELAPP
             if (checkBox1.Checked)
             {
                 pw1.UseSystemPasswordChar = true;
-                
+
             }
             else
             {

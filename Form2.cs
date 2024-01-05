@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Data.SqlClient;
 
 namespace HOTELAPP
 {
@@ -70,7 +72,47 @@ namespace HOTELAPP
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-           
+
+        }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+            SqlConnection sqlConnection = null;
+
+            try
+            {
+            sqlConnection = new SqlConnection(@"Data Source=HERO\SQLEXPRESS;Initial Catalog=SQLHotel;Integrated Security=True");
+            sqlConnection.Open();
+            SqlCommand insertCmd = new SqlCommand("INSERT INTO userTable (Username, Password, Name, Surname, Gender, Birthday, Email, Role, PrizeCounter, Reservations) values (@Username, @Password, @Name, @Surname, @Gender, @Birthday, @Email, 'Guest', 0, '')", sqlConnection);
+            insertCmd.Parameters.AddWithValue("@Username", textBox3.Text);
+            insertCmd.Parameters.AddWithValue("@Password", registerpw.Text);
+            insertCmd.Parameters.AddWithValue("@Name", textBox4.Text);
+            insertCmd.Parameters.AddWithValue("@Surname", textBox1.Text);
+            insertCmd.Parameters.AddWithValue("@Gender", comboBox1.Text);
+            insertCmd.Parameters.AddWithValue("@Birthday", dateTimePicker1.Text);
+            insertCmd.Parameters.AddWithValue("@Email", textBox2.Text);
+
+            insertCmd.ExecuteNonQuery();
+            MessageBox.Show("kayıt olundu");
+
+            this.Close();
+            }
+            catch (Exception ex)
+            {
+                if (sqlConnection == null)
+                    MessageBox.Show("sql yüklenemedi");
+                else
+                {
+                    MessageBox.Show("kullanıcı adı alınmış");
+                }
+            }
+            finally
+            {
+                if (sqlConnection != null)
+                {
+                    sqlConnection.Close();
+                }
+            }
         }
     }
 }
