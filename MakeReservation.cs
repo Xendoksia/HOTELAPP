@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace HOTELAPP
 {
@@ -19,7 +20,9 @@ namespace HOTELAPP
         {
             InitializeComponent();
             SetGradientBackground();
+            this.SetStyle(ControlStyles.SupportsTransparentBackColor, true);
         }
+
         public void SetGradientBackground()
         {
             // Arka plan rengini gradient olarak ayarlamak için bir LinearGradientBrush kullanacağız.
@@ -46,6 +49,7 @@ namespace HOTELAPP
 
             return bitmap;
         }
+
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -98,13 +102,24 @@ namespace HOTELAPP
             comboBox1.Items.Insert(0, "Please Select a Room Type");
             comboBox1.SelectedIndex = 0;
             textBox3.ReadOnly = true;
-            textBox2.ReadOnly = true;
+            textBox2.ReadOnly = true; 
+            textBox1.ReadOnly = true;
             textBox4.ReadOnly = true;
+          
+         
+
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();//Create the new form
+            f3.Show();//display Form2 to the user
+            this.Close();
         }
     }
 }

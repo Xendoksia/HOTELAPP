@@ -251,6 +251,7 @@
             this.Controls.Add(this.rjButton1);
             this.Controls.Add(this.linkLabel1);
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.ResumeLayout(false);
