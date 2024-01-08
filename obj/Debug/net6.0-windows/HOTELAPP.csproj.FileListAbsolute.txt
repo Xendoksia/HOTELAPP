@@ -52,3 +52,4 @@ C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\bin\Debug\net6.0-windows\runtimes\win\l
 C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.csproj.CopyComplete
 C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Form3.resources
 E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Form3.resources
+C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Form4.resources
