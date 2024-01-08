@@ -118,6 +118,7 @@
             this.rjButton3.TabIndex = 4;
             this.rjButton3.TextColor = System.Drawing.Color.White;
             this.rjButton3.UseVisualStyleBackColor = false;
+            this.rjButton3.Click += new System.EventHandler(this.rjButton3_Click);
             // 
             // rjButton4
             // 
@@ -251,7 +252,6 @@
             this.Controls.Add(this.linkLabel1);
             this.Name = "Form3";
             this.Text = "Form3";
-         
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -72,6 +72,13 @@ namespace HOTELAPP
 
         }
 
+        private void rjButton3_Click(object sender, EventArgs e)
+        {
+            MakeReservation f3 = new MakeReservation();//Create the new form
+            f3.Show();//display Form2 to the user
+            this.Close();
+        }
+
         
     }
 }
