@@ -54,3 +54,5 @@ C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Form3
 E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Form3.resources
 C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.MakeReservation.resources
 C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Profile.resources
+E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.MakeReservation.resources
+E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Profile.resources

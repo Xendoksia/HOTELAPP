@@ -50,11 +50,15 @@ namespace HOTELAPP
         {
             SqlConnection sqlConnection = null;
 
+            sqlConnection = new SqlConnection(@"Data Source = DESKTOP-HV9AC1E\SQLEXPRESS; Initial Catalog = 'Hotel Reservation'; Integrated Security = True");
+            if (sqlConnection == null)
+            {
+                sqlConnection = new SqlConnection(@"Data Source = HERO\SQLEXPRESS; Initial Catalog = 'Hotel Reservation'; Integrated Security = True");
+            }
             try
             {
-                sqlConnection = new SqlConnection(@"Data Source=HERO\SQLEXPRESS;Initial Catalog=SQLHotel;Integrated Security=True");
                 sqlConnection.Open();
-                SqlCommand userCmd = new SqlCommand("SELECT Username, Password FROM userTable", sqlConnection);
+                SqlCommand userCmd = new SqlCommand("SELECT username, password FROM [User]", sqlConnection);
                 SqlDataReader userTable = userCmd.ExecuteReader();
 
                 string usernameText = textBox1.Text, passwordText = pw1.Text;
@@ -89,18 +93,6 @@ namespace HOTELAPP
 
         }
 
-
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
@@ -114,7 +106,8 @@ namespace HOTELAPP
             }
         }
 
-        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+
+        private void linkLabel1_LinkClicked_1(object sender, EventArgs e)
         {
             Form2 f2 = new Form2();
             f2.Show();

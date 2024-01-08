@@ -81,21 +81,21 @@ namespace HOTELAPP
 
             try
             {
-            sqlConnection = new SqlConnection(@"Data Source=HERO\SQLEXPRESS;Initial Catalog=SQLHotel;Integrated Security=True");
-            sqlConnection.Open();
-            SqlCommand insertCmd = new SqlCommand("INSERT INTO userTable (Username, Password, Name, Surname, Gender, Birthday, Email, Role, PrizeCounter, Reservations) values (@Username, @Password, @Name, @Surname, @Gender, @Birthday, @Email, 'Guest', 0, '')", sqlConnection);
-            insertCmd.Parameters.AddWithValue("@Username", textBox3.Text);
-            insertCmd.Parameters.AddWithValue("@Password", registerpw.Text);
-            insertCmd.Parameters.AddWithValue("@Name", textBox4.Text);
-            insertCmd.Parameters.AddWithValue("@Surname", textBox1.Text);
-            insertCmd.Parameters.AddWithValue("@Gender", comboBox1.Text);
-            insertCmd.Parameters.AddWithValue("@Birthday", dateTimePicker1.Text);
-            insertCmd.Parameters.AddWithValue("@Email", textBox2.Text);
+                sqlConnection = new SqlConnection(@"Data Source=HERO\SQLEXPRESS;Initial Catalog= 'Hotel Reservation';Integrated Security=True");
+                sqlConnection.Open();
+                SqlCommand insertCmd = new SqlCommand("INSERT INTO [User] (username, password, name, surname, gender, email, birthday, role) values (@Username, @Password, @Name, @Surname, @Gender, @Email, @Birthday, 'Guest')", sqlConnection);
+                insertCmd.Parameters.AddWithValue("@Username", textBox3.Text);
+                insertCmd.Parameters.AddWithValue("@Password", registerpw.Text);
+                insertCmd.Parameters.AddWithValue("@Name", textBox4.Text);
+                insertCmd.Parameters.AddWithValue("@Surname", textBox1.Text);
+                insertCmd.Parameters.AddWithValue("@Gender", comboBox1.Text);
+                insertCmd.Parameters.AddWithValue("@Birthday", dateTimePicker1.Text);
+                insertCmd.Parameters.AddWithValue("@Email", textBox2.Text);
 
-            insertCmd.ExecuteNonQuery();
-            MessageBox.Show("kayıt olundu");
+                insertCmd.ExecuteNonQuery();
+                MessageBox.Show("kayıt olundu");
 
-            this.Close();
+                this.Close();
             }
             catch (Exception ex)
             {
