@@ -79,6 +79,12 @@ namespace HOTELAPP
             this.Close();
         }
 
-        
+        private void rjButton4_Click(object sender, EventArgs e)
+        {
+            Profile f1 = new Profile();//Create the new form
+            f1.Show();//display Form2 to the user
+            this.Close();
+
+        }
     }
 }

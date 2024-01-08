@@ -13,6 +13,9 @@
     <Compile Update="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="MakeReservation.cs">
       <SubType>Form</SubType>
     </Compile>

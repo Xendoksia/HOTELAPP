@@ -138,6 +138,7 @@
             this.rjButton4.TabIndex = 5;
             this.rjButton4.TextColor = System.Drawing.Color.White;
             this.rjButton4.UseVisualStyleBackColor = false;
+            this.rjButton4.Click += new System.EventHandler(this.rjButton4_Click);
             // 
             // label1
             // 
