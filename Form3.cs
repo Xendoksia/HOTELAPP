@@ -64,7 +64,9 @@ namespace HOTELAPP
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
-
+            ReservationHistory f2 = new ReservationHistory();
+            f2.Show();
+            this.Close();
         }
 
         private void label2_Click(object sender, EventArgs e)
