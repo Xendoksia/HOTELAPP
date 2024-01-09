@@ -131,7 +131,7 @@
             comboBox1.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             comboBox1.FormattingEnabled = true;
             comboBox1.ItemHeight = 45;
-            comboBox1.Items.AddRange(new object[] { "Male", "Female" });
+            comboBox1.Items.AddRange(new object[] { "Male", "Female", "Attack Helicopter" });
             comboBox1.Location = new Point(199, 419);
             comboBox1.Margin = new Padding(3, 4, 3, 4);
             comboBox1.Name = "comboBox1";

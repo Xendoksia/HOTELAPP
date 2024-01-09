@@ -77,13 +77,11 @@ namespace HOTELAPP
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlConnection = null;
-
+            ConfigureSQL sqlConnection = new ConfigureSQL();
             try
             {
-                sqlConnection = new SqlConnection(@"Data Source=HERO\SQLEXPRESS;Initial Catalog= 'Hotel Reservation';Integrated Security=True");
-                sqlConnection.Open();
-                SqlCommand insertCmd = new SqlCommand("INSERT INTO [User] (username, password, name, surname, gender, email, birthday, role) values (@Username, @Password, @Name, @Surname, @Gender, @Email, @Birthday, 'Guest')", sqlConnection);
+                sqlConnection.Sql.Open();
+                SqlCommand insertCmd = new SqlCommand("INSERT INTO [User] (username, password, name, surname, gender, email, birthday, role) values (@Username, @Password, @Name, @Surname, @Gender, @Email, @Birthday, 'Guest')", sqlConnection.Sql);
                 insertCmd.Parameters.AddWithValue("@Username", textBox3.Text);
                 insertCmd.Parameters.AddWithValue("@Password", registerpw.Text);
                 insertCmd.Parameters.AddWithValue("@Name", textBox4.Text);
@@ -110,7 +108,7 @@ namespace HOTELAPP
             {
                 if (sqlConnection != null)
                 {
-                    sqlConnection.Close();
+                    sqlConnection.Sql.Close();
                 }
             }
         }

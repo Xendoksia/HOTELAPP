@@ -1,3 +1,6 @@
+using System.Data.SqlClient;
+
+
 namespace HOTELAPP
 {
     internal static class Program
@@ -13,9 +16,9 @@ namespace HOTELAPP
             ApplicationConfiguration.Initialize();
             //Application.Run(new Form1());
             var main_form = new Form1();
+
             main_form.Show();
             Application.Run();
-
         }
     }
 }

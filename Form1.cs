@@ -8,6 +8,8 @@ namespace HOTELAPP
 {
     public partial class Form1 : Form
     {
+
+        bool form3opened = false;
         public Form1()
         {
             InitializeComponent();
@@ -48,17 +50,13 @@ namespace HOTELAPP
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlConnection = null;
 
-            sqlConnection = new SqlConnection(@"Data Source = DESKTOP-HV9AC1E\SQLEXPRESS; Initial Catalog = 'Hotel Reservation'; Integrated Security = True");
-            if (sqlConnection == null)
-            {
-                sqlConnection = new SqlConnection(@"Data Source = HERO\SQLEXPRESS; Initial Catalog = 'Hotel Reservation'; Integrated Security = True");
-            }
+            ConfigureSQL sqlConnection = new ConfigureSQL();
+
             try
             {
-                sqlConnection.Open();
-                SqlCommand userCmd = new SqlCommand("SELECT username, password FROM [User]", sqlConnection);
+                sqlConnection.Sql.Open();
+                SqlCommand userCmd = new SqlCommand("SELECT username, password FROM [User]", sqlConnection.Sql);
                 SqlDataReader userTable = userCmd.ExecuteReader();
 
                 string usernameText = textBox1.Text, passwordText = pw1.Text;
@@ -71,6 +69,8 @@ namespace HOTELAPP
 
                         Form3 f3 = new Form3();//Create the new form
                         f3.Show();//display Form2 to the user
+
+                        form3opened = true;
                         this.Close();
                         return;
                     }
@@ -85,7 +85,7 @@ namespace HOTELAPP
             {
                 if (sqlConnection != null)
                 {
-                    sqlConnection.Close();
+                    sqlConnection.Sql.Close();
                 }
             }
 
@@ -111,6 +111,11 @@ namespace HOTELAPP
         {
             Form2 f2 = new Form2();
             f2.Show();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (!form3opened) Application.Exit();
         }
     }
 }
