@@ -70,6 +70,7 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Font = new System.Drawing.Font("Ebrima", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel1.LinkColor = System.Drawing.Color.MediumSlateBlue;
             this.linkLabel1.Location = new System.Drawing.Point(40, 391);
             this.linkLabel1.Name = "linkLabel1";
@@ -84,6 +85,7 @@
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel2.Font = new System.Drawing.Font("Ebrima", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.linkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLabel2.LinkColor = System.Drawing.Color.MediumSlateBlue;
             this.linkLabel2.Location = new System.Drawing.Point(40, 457);
             this.linkLabel2.Name = "linkLabel2";
@@ -240,6 +242,7 @@
             this.rjButton1.Text = "Go Back";
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
             // Profile
             // 
@@ -262,6 +265,7 @@
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.rjCircularPictureBox1);
             this.Name = "Profile";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Profile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
