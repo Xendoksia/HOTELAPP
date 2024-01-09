@@ -58,7 +58,15 @@ namespace HOTELAPP
 
         private void rjCircularPictureBox1_Click(object sender, EventArgs e)
         {
+            
 
+        }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+            Form3 pr = new Form3();//Create the new form
+            pr.Show();//display Form2 to the user
+            this.Close();
         }
     }
 }

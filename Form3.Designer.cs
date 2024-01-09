@@ -41,7 +41,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.rjCircularPictureBox1 = new CustomControls.RJControls.RJCircularPictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.rjButton5 = new CustomControls.RJControls.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,6 +99,7 @@
             this.rjButton2.TabIndex = 3;
             this.rjButton2.TextColor = System.Drawing.Color.White;
             this.rjButton2.UseVisualStyleBackColor = false;
+            this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
             // 
             // rjButton3
             // 
@@ -189,6 +190,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(1162, 121);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 18);
@@ -199,9 +201,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(1097, 9);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(1108, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(19, 15);
+            this.label6.Size = new System.Drawing.Size(36, 28);
             this.label6.TabIndex = 27;
             this.label6.Text = "10";
             // 
@@ -222,24 +226,32 @@
             this.rjCircularPictureBox1.TabIndex = 28;
             this.rjCircularPictureBox1.TabStop = false;
             // 
-            // button1
+            // rjButton5
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::HOTELAPP.Properties.Resources.bell;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(1074, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(31, 35);
-            this.button1.TabIndex = 29;
-            this.button1.UseVisualStyleBackColor = false;
+            this.rjButton5.BackColor = System.Drawing.Color.RebeccaPurple;
+            this.rjButton5.BackgroundColor = System.Drawing.Color.RebeccaPurple;
+            this.rjButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rjButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton5.BorderRadius = 20;
+            this.rjButton5.BorderSize = 0;
+            this.rjButton5.FlatAppearance.BorderSize = 0;
+            this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton5.ForeColor = System.Drawing.Color.White;
+            this.rjButton5.Image = ((System.Drawing.Image)(resources.GetObject("rjButton5.Image")));
+            this.rjButton5.Location = new System.Drawing.Point(1080, 27);
+            this.rjButton5.Name = "rjButton5";
+            this.rjButton5.Size = new System.Drawing.Size(36, 40);
+            this.rjButton5.TabIndex = 29;
+            this.rjButton5.TextColor = System.Drawing.Color.White;
+            this.rjButton5.UseVisualStyleBackColor = false;
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1266, 613);
+            this.Controls.Add(this.rjButton5);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.rjCircularPictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -273,6 +285,6 @@
         private Label label5;
         private Label label6;
         private CustomControls.RJControls.RJCircularPictureBox rjCircularPictureBox1;
-        private Button button1;
+        private CustomControls.RJControls.RJButton rjButton5;
     }
 }

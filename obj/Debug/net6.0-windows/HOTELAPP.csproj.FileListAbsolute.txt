@@ -56,3 +56,4 @@ C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.MakeR
 C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Profile.resources
 E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.MakeReservation.resources
 E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Profile.resources
+C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.PointShop.resources

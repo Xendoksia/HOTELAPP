@@ -86,5 +86,12 @@ namespace HOTELAPP
             this.Close();
 
         }
+
+        private void rjButton2_Click(object sender, EventArgs e)
+        {
+            PointShop f1 = new PointShop();//Create the new form
+            f1.Show();//display Form2 to the user
+            this.Close();
+        }
     }
 }
