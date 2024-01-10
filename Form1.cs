@@ -69,7 +69,7 @@ namespace HOTELAPP
                         switch (userTable[2].ToString())
                         {
                             case "Guest":
-                                Form3 f3 = new Form3();
+                                Form3 f3 = new Form3(usernameText);
                                 f3.Show();
                                 break;
 
@@ -85,6 +85,8 @@ namespace HOTELAPP
 
                         form3opened = true;
                         this.Close();
+
+                        sqlConnection.Sql.Close();
                         return;
                     }
                 }

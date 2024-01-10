@@ -13,10 +13,12 @@ namespace HOTELAPP
 {
     public partial class ReservationHistory : Form
     {
-        public ReservationHistory()
+        string username;
+        public ReservationHistory(string user)
         {
             InitializeComponent();
             SetGradientBackground();
+            username = user;
         }
         public void SetGradientBackground()
         {
@@ -52,7 +54,7 @@ namespace HOTELAPP
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
-            Form3 f2 = new Form3();
+            Form3 f2 = new Form3(username);
             f2.Show();
             this.Close();
         }

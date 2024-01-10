@@ -13,10 +13,12 @@ namespace HOTELAPP
 {
     public partial class PointShop : Form
     {
-        public PointShop()
+        string username;
+        public PointShop(string user)
         {
             InitializeComponent();
             SetGradientBackground();
+            username = user;
         }
         public void SetGradientBackground()
         {
@@ -48,7 +50,7 @@ namespace HOTELAPP
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
-            Form3 f3 = new Form3();//Create the new form
+            Form3 f3 = new Form3(username);//Create the new form
             f3.Show();//display Form2 to the user
             this.Close();
         }

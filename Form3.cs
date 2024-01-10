@@ -15,10 +15,12 @@ namespace HOTELAPP
 {
     public partial class Form3 : Form
     {
-        public Form3()
+        string username;
+        public Form3(string user)
         {
             InitializeComponent();
             SetGradientBackground();
+            username = user;
         }
         public void SetGradientBackground()
         {
@@ -74,14 +76,14 @@ namespace HOTELAPP
 
         private void rjButton3_Click(object sender, EventArgs e)
         {
-            MakeReservation f3 = new MakeReservation();//Create the new form
+            MakeReservation f3 = new MakeReservation(username);//Create the new form
             f3.Show();//display Form2 to the user
             this.Close();
         }
 
         private void rjButton4_Click(object sender, EventArgs e)
         {
-            Profile f1 = new Profile();//Create the new form
+            Profile f1 = new Profile(username);//Create the new form
             f1.Show();//display Form2 to the user
             this.Close();
 
