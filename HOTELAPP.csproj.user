@@ -28,5 +28,8 @@
     <Compile Update="ManageRooms.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
