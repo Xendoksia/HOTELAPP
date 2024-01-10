@@ -60,6 +60,7 @@
             linkLabel1.TabIndex = 20;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Log Out";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // rjButton1
             // 

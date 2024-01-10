@@ -89,7 +89,14 @@ namespace HOTELAPP
 
         private void Form3_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Close();
         }
     }
 }

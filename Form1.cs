@@ -56,7 +56,7 @@ namespace HOTELAPP
             try
             {
                 sqlConnection.Sql.Open();
-                SqlCommand userCmd = new SqlCommand("SELECT username, password FROM [User]", sqlConnection.Sql);
+                SqlCommand userCmd = new SqlCommand("SELECT username, password, role FROM [User]", sqlConnection.Sql);
                 SqlDataReader userTable = userCmd.ExecuteReader();
 
                 string usernameText = textBox1.Text, passwordText = pw1.Text;
@@ -66,9 +66,22 @@ namespace HOTELAPP
 
                     if (usernameText == userTable[0].ToString() && passwordText == userTable[1].ToString())
                     {
+                        switch (userTable[2].ToString())
+                        {
+                            case "Guest":
+                                Form3 f3 = new Form3();
+                                f3.Show();
+                                break;
 
-                        Form3 f3 = new Form3();//Create the new form
-                        f3.Show();//display Form2 to the user
+                            case "Staff":
+                                Staff staff = new Staff();
+                                staff.Show();
+                                break;
+
+                            case "Manager":
+                                break;
+                        }
+
 
                         form3opened = true;
                         this.Close();

@@ -9,7 +9,7 @@ namespace HOTELAPP
 {
     public class ConfigureSQL
     {
-        public readonly SqlConnection Sql;
+        public SqlConnection Sql;
         public ConfigureSQL()
         {
             string pcname = System.Environment.MachineName;

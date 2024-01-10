@@ -54,7 +54,7 @@ namespace HOTELAPP
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            if (comboBox1.SelectedIndex== 0)
+            if (comboBox1.SelectedIndex== 0) // deniz üstat yemin ederim yazılımda 1 numara
             {
                 pictureBox1.Visible = false;
                 pictureBox2.Visible = false;
@@ -93,8 +93,6 @@ namespace HOTELAPP
                 dateTimePicker1.Visible = true;
                 dateTimePicker2.Visible = true;
             }
-
-
         }
 
         private void Form4_Load(object sender, EventArgs e)
