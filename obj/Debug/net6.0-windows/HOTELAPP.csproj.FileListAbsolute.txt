@@ -64,3 +64,4 @@ E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.ManageRooms.resources
 E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.PointShop.resources
 E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.ReservationHistory.resources
 E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Staff.resources
+C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.ManageReservations.resources

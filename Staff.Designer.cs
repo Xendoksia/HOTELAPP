@@ -41,6 +41,10 @@
             this.panel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.manageRooms1 = new HOTELAPP.ManageRooms();
+            this.manageReservations1 = new HOTELAPP.ManageReservations();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -62,7 +66,7 @@
             // SidebarBtn
             // 
             this.SidebarBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-        
+            this.SidebarBtn.Image = global::HOTELAPP.Properties.Resources.menu;
             this.SidebarBtn.Location = new System.Drawing.Point(-3, 0);
             this.SidebarBtn.Name = "SidebarBtn";
             this.SidebarBtn.Size = new System.Drawing.Size(60, 51);
@@ -118,6 +122,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "  Manage Reservations";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel5
             // 
@@ -142,6 +147,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Room Management";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // SidebarTimer
             // 
@@ -186,12 +192,56 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 57F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(457, 129);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(655, 101);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Choose Operation";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 57F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(457, 252);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(687, 101);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "<<------------------";
+            // 
+            // manageRooms1
+            // 
+            this.manageRooms1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.manageRooms1.Location = new System.Drawing.Point(1, 0);
+            this.manageRooms1.Name = "manageRooms1";
+            this.manageRooms1.Size = new System.Drawing.Size(1358, 647);
+            this.manageRooms1.TabIndex = 9;
+            // 
+            // manageReservations1
+            // 
+            this.manageReservations1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.manageReservations1.Location = new System.Drawing.Point(1, 0);
+            this.manageReservations1.Name = "manageReservations1";
+            this.manageReservations1.Size = new System.Drawing.Size(1358, 647);
+            this.manageReservations1.TabIndex = 10;
+            // 
             // Staff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1339, 636);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.manageReservations1);
+            this.Controls.Add(this.manageRooms1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
             this.Name = "Staff";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
@@ -203,6 +253,7 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -219,5 +270,9 @@
         private FlowLayoutPanel panel1;
         private Panel panel3;
         private Button button1;
+        private Label label1;
+        private Label label3;
+        private ManageRooms manageRooms1;
+        private ManageReservations manageReservations1;
     }
 }
