@@ -16,6 +16,9 @@
     <Compile Update="ManageReservations.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ManagerWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="PointShop.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "I+kw1OJK6K2xrxQJN3kLNTrVCkY5rv7tjtLIAXy2s1AUieKKd8VnHmhc6/qo4om9iUs03PtymrhtWPrqVQsBZw==",
+  "dgSpecHash": "swwAZacRvNebO3C8IxC1tGJ5OsILdcDYnl/HwQ+HyhiU2bNhcuAJjT37n9LdFcWIvLwFGOwv6Qemd+n6QgPmhQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Deniz\\Desktop\\HOTELAPP\\HOTELAPP\\HOTELAPP.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Deniz\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512",
     "C:\\Users\\Deniz\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Deniz\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Deniz\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
