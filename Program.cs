@@ -15,7 +15,7 @@ namespace HOTELAPP
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //Application.Run(new Form1());
-            var main_form = new ManagerWindow();
+            var main_form = new Form3("user");
 
             main_form.Show();
             Application.Run();
