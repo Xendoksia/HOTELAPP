@@ -58,5 +58,10 @@ namespace HOTELAPP
             f2.Show();
             this.Close();
         }
+
+        private void modifybtn_Click(object sender, EventArgs e)
+        {
+            manageReservations1.Visible = true;
+        }
     }
 }

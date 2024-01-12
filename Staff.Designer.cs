@@ -33,9 +33,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.SidebarBtn = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.newreservation = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.SidebarTimer = new System.Windows.Forms.Timer(this.components);
@@ -45,10 +43,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.manageRooms1 = new HOTELAPP.ManageRooms();
-            this.manageReservations1 = new HOTELAPP.ManageReservations();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -78,52 +74,27 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.panel6.Controls.Add(this.button4);
+            this.panel6.Controls.Add(this.newreservation);
             this.panel6.Location = new System.Drawing.Point(3, 360);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(314, 56);
             this.panel6.TabIndex = 4;
             // 
-            // button4
+            // newreservation
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.SystemColors.Control;
-            this.button4.Image = global::HOTELAPP.Properties.Resources.check;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(-45, -19);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(341, 85);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "        Confirm New Reser.";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Location = new System.Drawing.Point(3, 422);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(327, 56);
-            this.panel4.TabIndex = 3;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Image = global::HOTELAPP.Properties.Resources.notebook;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(-43, -10);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(311, 75);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "  Manage Reservations";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.newreservation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.newreservation.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.newreservation.ForeColor = System.Drawing.SystemColors.Control;
+            this.newreservation.Image = global::HOTELAPP.Properties.Resources.check;
+            this.newreservation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.newreservation.Location = new System.Drawing.Point(-45, -19);
+            this.newreservation.Name = "newreservation";
+            this.newreservation.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.newreservation.Size = new System.Drawing.Size(341, 85);
+            this.newreservation.TabIndex = 3;
+            this.newreservation.Text = "        New Reservation";
+            this.newreservation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.newreservation.UseVisualStyleBackColor = false;
             // 
             // panel5
             // 
@@ -162,7 +133,6 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel4);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(257, 678);
@@ -222,28 +192,18 @@
             this.manageRooms1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.manageRooms1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("manageRooms1.BackgroundImage")));
             this.manageRooms1.ForeColor = System.Drawing.SystemColors.Control;
-            this.manageRooms1.Location = new System.Drawing.Point(251, -35);
+            this.manageRooms1.Location = new System.Drawing.Point(35, 12);
             this.manageRooms1.Name = "manageRooms1";
-            this.manageRooms1.Size = new System.Drawing.Size(1400, 674);
+            this.manageRooms1.Size = new System.Drawing.Size(1400, 638);
             this.manageRooms1.TabIndex = 9;
-            // 
-            // manageReservations1
-            // 
-            this.manageReservations1.BackColor = System.Drawing.Color.Transparent;
-            this.manageReservations1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("manageReservations1.BackgroundImage")));
-            this.manageReservations1.Location = new System.Drawing.Point(-14, -94);
-            this.manageReservations1.Name = "manageReservations1";
-            this.manageReservations1.Size = new System.Drawing.Size(1450, 733);
-            this.manageReservations1.TabIndex = 10;
             // 
             // Staff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1184, 636);
+            this.ClientSize = new System.Drawing.Size(1325, 636);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.manageReservations1);
             this.Controls.Add(this.manageRooms1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -253,7 +213,6 @@
             this.Load += new System.EventHandler(this.Staff_Load);
             this.panel2.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -264,12 +223,10 @@
 
         #endregion
         private Panel panel2;
-        private Panel panel4;
         private Panel panel5;
         private Button button3;
-        private Button button2;
         private Panel panel6;
-        private Button button4;
+        private Button newreservation;
         private Button SidebarBtn;
         private System.Windows.Forms.Timer SidebarTimer;
         private FlowLayoutPanel panel1;

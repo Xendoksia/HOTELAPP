@@ -29,243 +29,240 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
-            linkLabel1 = new LinkLabel();
-            rjButton1 = new CustomControls.RJControls.RJButton();
-            rjButton2 = new CustomControls.RJControls.RJButton();
-            rjButton3 = new CustomControls.RJControls.RJButton();
-            rjButton4 = new CustomControls.RJControls.RJButton();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            rjCircularPictureBox1 = new CustomControls.RJControls.RJCircularPictureBox();
-            button1 = new Button();
-            ((System.ComponentModel.ISupportInitialize)rjCircularPictureBox1).BeginInit();
-            SuspendLayout();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.rjButton2 = new CustomControls.RJControls.RJButton();
+            this.rjButton3 = new CustomControls.RJControls.RJButton();
+            this.rjButton4 = new CustomControls.RJControls.RJButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.rjCircularPictureBox1 = new CustomControls.RJControls.RJCircularPictureBox();
+            this.ıconButton1 = new FontAwesome.Sharp.IconButton();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // linkLabel1
             // 
-            linkLabel1.ActiveLinkColor = Color.DarkSlateGray;
-            linkLabel1.AutoSize = true;
-            linkLabel1.BackColor = Color.Transparent;
-            linkLabel1.Font = new Font("Verdana", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            linkLabel1.LinkArea = new LinkArea(0, 7);
-            linkLabel1.LinkBehavior = LinkBehavior.NeverUnderline;
-            linkLabel1.LinkColor = Color.PowderBlue;
-            linkLabel1.Location = new Point(55, 60);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(167, 41);
-            linkLabel1.TabIndex = 20;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Log Out";
-            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.DarkSlateGray;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.linkLabel1.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.linkLabel1.LinkArea = new System.Windows.Forms.LinkArea(0, 7);
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.PowderBlue;
+            this.linkLabel1.Location = new System.Drawing.Point(48, 45);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(132, 32);
+            this.linkLabel1.TabIndex = 20;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Log Out";
             // 
             // rjButton1
             // 
-            rjButton1.BackColor = Color.MediumSlateBlue;
-            rjButton1.BackgroundColor = Color.MediumSlateBlue;
-            rjButton1.BackgroundImage = Properties.Resources.history;
-            rjButton1.BackgroundImageLayout = ImageLayout.Stretch;
-            rjButton1.BorderColor = Color.PowderBlue;
-            rjButton1.BorderRadius = 20;
-            rjButton1.BorderSize = 3;
-            rjButton1.FlatAppearance.BorderSize = 0;
-            rjButton1.FlatStyle = FlatStyle.Flat;
-            rjButton1.ForeColor = Color.White;
-            rjButton1.Location = new Point(917, 161);
-            rjButton1.Margin = new Padding(3, 4, 3, 4);
-            rjButton1.Name = "rjButton1";
-            rjButton1.Size = new Size(179, 159);
-            rjButton1.TabIndex = 2;
-            rjButton1.TextColor = Color.White;
-            rjButton1.UseVisualStyleBackColor = false;
-            rjButton1.Click += rjButton1_Click;
+            this.rjButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton1.BackgroundImage = global::HOTELAPP.Properties.Resources.history;
+            this.rjButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rjButton1.BorderColor = System.Drawing.Color.PowderBlue;
+            this.rjButton1.BorderRadius = 20;
+            this.rjButton1.BorderSize = 3;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Location = new System.Drawing.Point(802, 121);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(157, 119);
+            this.rjButton1.TabIndex = 2;
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
             // rjButton2
             // 
-            rjButton2.BackColor = Color.MediumSlateBlue;
-            rjButton2.BackgroundColor = Color.MediumSlateBlue;
-            rjButton2.BackgroundImage = (Image)resources.GetObject("rjButton2.BackgroundImage");
-            rjButton2.BackgroundImageLayout = ImageLayout.Stretch;
-            rjButton2.BorderColor = Color.PowderBlue;
-            rjButton2.BorderRadius = 20;
-            rjButton2.BorderSize = 3;
-            rjButton2.FlatAppearance.BorderSize = 0;
-            rjButton2.FlatStyle = FlatStyle.Flat;
-            rjButton2.ForeColor = Color.White;
-            rjButton2.Location = new Point(343, 452);
-            rjButton2.Margin = new Padding(3, 4, 3, 4);
-            rjButton2.Name = "rjButton2";
-            rjButton2.Size = new Size(179, 159);
-            rjButton2.TabIndex = 3;
-            rjButton2.TextColor = Color.White;
-            rjButton2.UseVisualStyleBackColor = false;
+            this.rjButton2.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton2.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rjButton2.BackgroundImage")));
+            this.rjButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rjButton2.BorderColor = System.Drawing.Color.PowderBlue;
+            this.rjButton2.BorderRadius = 20;
+            this.rjButton2.BorderSize = 3;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.ForeColor = System.Drawing.Color.White;
+            this.rjButton2.Location = new System.Drawing.Point(300, 339);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(157, 119);
+            this.rjButton2.TabIndex = 3;
+            this.rjButton2.TextColor = System.Drawing.Color.White;
+            this.rjButton2.UseVisualStyleBackColor = false;
+            this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
             // 
             // rjButton3
             // 
-            rjButton3.BackColor = Color.MediumSlateBlue;
-            rjButton3.BackgroundColor = Color.MediumSlateBlue;
-            rjButton3.BackgroundImage = Properties.Resources.booking1;
-            rjButton3.BackgroundImageLayout = ImageLayout.Stretch;
-            rjButton3.BorderColor = Color.PowderBlue;
-            rjButton3.BorderRadius = 20;
-            rjButton3.BorderSize = 3;
-            rjButton3.FlatAppearance.BorderSize = 0;
-            rjButton3.FlatStyle = FlatStyle.Flat;
-            rjButton3.ForeColor = Color.White;
-            rjButton3.Location = new Point(343, 161);
-            rjButton3.Margin = new Padding(3, 4, 3, 4);
-            rjButton3.Name = "rjButton3";
-            rjButton3.Size = new Size(179, 159);
-            rjButton3.TabIndex = 4;
-            rjButton3.TextColor = Color.White;
-            rjButton3.UseVisualStyleBackColor = false;
-            rjButton3.Click += rjButton3_Click;
+            this.rjButton3.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton3.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton3.BackgroundImage = global::HOTELAPP.Properties.Resources.booking1;
+            this.rjButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rjButton3.BorderColor = System.Drawing.Color.PowderBlue;
+            this.rjButton3.BorderRadius = 20;
+            this.rjButton3.BorderSize = 3;
+            this.rjButton3.FlatAppearance.BorderSize = 0;
+            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton3.ForeColor = System.Drawing.Color.White;
+            this.rjButton3.Location = new System.Drawing.Point(300, 121);
+            this.rjButton3.Name = "rjButton3";
+            this.rjButton3.Size = new System.Drawing.Size(157, 119);
+            this.rjButton3.TabIndex = 4;
+            this.rjButton3.TextColor = System.Drawing.Color.White;
+            this.rjButton3.UseVisualStyleBackColor = false;
+            this.rjButton3.Click += new System.EventHandler(this.rjButton3_Click);
             // 
             // rjButton4
             // 
-            rjButton4.BackColor = Color.MediumSlateBlue;
-            rjButton4.BackgroundColor = Color.MediumSlateBlue;
-            rjButton4.BackgroundImage = Properties.Resources.personal;
-            rjButton4.BackgroundImageLayout = ImageLayout.Stretch;
-            rjButton4.BorderColor = Color.PowderBlue;
-            rjButton4.BorderRadius = 20;
-            rjButton4.BorderSize = 3;
-            rjButton4.FlatAppearance.BorderSize = 0;
-            rjButton4.FlatStyle = FlatStyle.Flat;
-            rjButton4.ForeColor = Color.White;
-            rjButton4.Location = new Point(917, 452);
-            rjButton4.Margin = new Padding(3, 4, 3, 4);
-            rjButton4.Name = "rjButton4";
-            rjButton4.Size = new Size(179, 159);
-            rjButton4.TabIndex = 5;
-            rjButton4.TextColor = Color.White;
-            rjButton4.UseVisualStyleBackColor = false;
-            rjButton4.Click += rjButton4_Click;
+            this.rjButton4.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton4.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton4.BackgroundImage = global::HOTELAPP.Properties.Resources.personal;
+            this.rjButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rjButton4.BorderColor = System.Drawing.Color.PowderBlue;
+            this.rjButton4.BorderRadius = 20;
+            this.rjButton4.BorderSize = 3;
+            this.rjButton4.FlatAppearance.BorderSize = 0;
+            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton4.ForeColor = System.Drawing.Color.White;
+            this.rjButton4.Location = new System.Drawing.Point(802, 339);
+            this.rjButton4.Name = "rjButton4";
+            this.rjButton4.Size = new System.Drawing.Size(157, 119);
+            this.rjButton4.TabIndex = 5;
+            this.rjButton4.TextColor = System.Drawing.Color.White;
+            this.rjButton4.UseVisualStyleBackColor = false;
+            this.rjButton4.Click += new System.EventHandler(this.rjButton4_Click);
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Verdana", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(296, 351);
-            label1.Name = "label1";
-            label1.Size = new Size(293, 31);
-            label1.TabIndex = 21;
-            label1.Text = "Make a Reservation";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(259, 263);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(231, 25);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Make a Reservation";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Verdana", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(357, 629);
-            label2.Name = "label2";
-            label2.Size = new Size(166, 31);
-            label2.TabIndex = 22;
-            label2.Text = "Point Shop";
-            label2.Click += label2_Click;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(312, 472);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(134, 25);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Point Shop";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Verdana", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(888, 351);
-            label3.Name = "label3";
-            label3.Size = new Size(293, 31);
-            label3.TabIndex = 23;
-            label3.Text = "Reservation History";
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(777, 263);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(235, 25);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Reservation History";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Verdana", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(963, 641);
-            label4.Name = "label4";
-            label4.Size = new Size(107, 31);
-            label4.TabIndex = 24;
-            label4.Text = "Profile";
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Verdana", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(843, 481);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(86, 25);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "Profile";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Verdana", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(1328, 161);
-            label5.Name = "label5";
-            label5.Size = new Size(113, 23);
-            label5.TabIndex = 25;
-            label5.Text = "90 Points";
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(1162, 121);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(86, 18);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "90 Points";
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Location = new Point(1254, 12);
-            label6.Name = "label6";
-            label6.Size = new Size(25, 20);
-            label6.TabIndex = 27;
-            label6.Text = "10";
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Location = new System.Drawing.Point(1097, 27);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(19, 15);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "10";
             // 
             // rjCircularPictureBox1
             // 
-            rjCircularPictureBox1.BackgroundImage = Properties.Resources._150708;
-            rjCircularPictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            rjCircularPictureBox1.BorderColor = Color.RoyalBlue;
-            rjCircularPictureBox1.BorderColor2 = Color.HotPink;
-            rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            rjCircularPictureBox1.BorderSize = 2;
-            rjCircularPictureBox1.GradientAngle = 50F;
-            rjCircularPictureBox1.Location = new Point(1312, 4);
-            rjCircularPictureBox1.Margin = new Padding(3, 4, 3, 4);
-            rjCircularPictureBox1.Name = "rjCircularPictureBox1";
-            rjCircularPictureBox1.Size = new Size(114, 114);
-            rjCircularPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            rjCircularPictureBox1.TabIndex = 28;
-            rjCircularPictureBox1.TabStop = false;
+            this.rjCircularPictureBox1.BackgroundImage = global::HOTELAPP.Properties.Resources._150708;
+            this.rjCircularPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.HotPink;
+            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.rjCircularPictureBox1.BorderSize = 2;
+            this.rjCircularPictureBox1.GradientAngle = 50F;
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(1148, 3);
+            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rjCircularPictureBox1.TabIndex = 28;
+            this.rjCircularPictureBox1.TabStop = false;
             // 
-            // button1
+            // ıconButton1
             // 
-            button1.BackColor = Color.Transparent;
-            button1.BackgroundImage = Properties.Resources.bell;
-            button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.Location = new Point(1227, 16);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(35, 47);
-            button1.TabIndex = 29;
-            button1.UseVisualStyleBackColor = false;
+            this.ıconButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.ıconButton1.FlatAppearance.BorderSize = 0;
+            this.ıconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ıconButton1.IconChar = FontAwesome.Sharp.IconChar.Bell;
+            this.ıconButton1.IconColor = System.Drawing.Color.White;
+            this.ıconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ıconButton1.Location = new System.Drawing.Point(1070, 27);
+            this.ıconButton1.Name = "ıconButton1";
+            this.ıconButton1.Size = new System.Drawing.Size(46, 50);
+            this.ıconButton1.TabIndex = 29;
+            this.ıconButton1.UseVisualStyleBackColor = false;
             // 
             // Form3
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1447, 817);
-            Controls.Add(label6);
-            Controls.Add(button1);
-            Controls.Add(rjCircularPictureBox1);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(rjButton4);
-            Controls.Add(rjButton3);
-            Controls.Add(rjButton2);
-            Controls.Add(rjButton1);
-            Controls.Add(linkLabel1);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "Form3";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form3";
-            FormClosing += Form3_FormClosing;
-            ((System.ComponentModel.ISupportInitialize)rjCircularPictureBox1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Purple;
+            this.ClientSize = new System.Drawing.Size(1266, 613);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.ıconButton1);
+            this.Controls.Add(this.rjCircularPictureBox1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.rjButton4);
+            this.Controls.Add(this.rjButton3);
+            this.Controls.Add(this.rjButton2);
+            this.Controls.Add(this.rjButton1);
+            this.Controls.Add(this.linkLabel1);
+            this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Form3";
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -281,6 +278,6 @@
         private Label label5;
         private Label label6;
         private CustomControls.RJControls.RJCircularPictureBox rjCircularPictureBox1;
-        private Button button1;
+        private FontAwesome.Sharp.IconButton ıconButton1;
     }
 }

@@ -28,9 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReservationHistory));
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.rjButton2 = new CustomControls.RJControls.RJButton();
+            this.modifybtn = new CustomControls.RJControls.RJButton();
+            this.manageReservations1 = new HOTELAPP.ManageReservations();
             this.SuspendLayout();
             // 
             // rjButton1
@@ -76,11 +80,61 @@
             this.textBox2.TabIndex = 15;
             this.textBox2.Text = "burda alt alta eklenicek yeşil olan aktif olan kırmızılar geçmiş olan";
             // 
+            // rjButton2
+            // 
+            this.rjButton2.BackColor = System.Drawing.Color.Purple;
+            this.rjButton2.BackgroundColor = System.Drawing.Color.Purple;
+            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton2.BorderRadius = 0;
+            this.rjButton2.BorderSize = 0;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.ForeColor = System.Drawing.Color.White;
+            this.rjButton2.Location = new System.Drawing.Point(963, 125);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(71, 38);
+            this.rjButton2.TabIndex = 16;
+            this.rjButton2.Text = "Cancel";
+            this.rjButton2.TextColor = System.Drawing.Color.White;
+            this.rjButton2.UseVisualStyleBackColor = false;
+            // 
+            // modifybtn
+            // 
+            this.modifybtn.BackColor = System.Drawing.Color.Purple;
+            this.modifybtn.BackgroundColor = System.Drawing.Color.Purple;
+            this.modifybtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.modifybtn.BorderRadius = 0;
+            this.modifybtn.BorderSize = 0;
+            this.modifybtn.FlatAppearance.BorderSize = 0;
+            this.modifybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.modifybtn.ForeColor = System.Drawing.Color.White;
+            this.modifybtn.Location = new System.Drawing.Point(1056, 125);
+            this.modifybtn.Name = "modifybtn";
+            this.modifybtn.Size = new System.Drawing.Size(71, 38);
+            this.modifybtn.TabIndex = 17;
+            this.modifybtn.Text = "Modify";
+            this.modifybtn.TextColor = System.Drawing.Color.White;
+            this.modifybtn.UseVisualStyleBackColor = false;
+            this.modifybtn.Click += new System.EventHandler(this.modifybtn_Click);
+            // 
+            // manageReservations1
+            // 
+            this.manageReservations1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.manageReservations1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("manageReservations1.BackgroundImage")));
+            this.manageReservations1.Location = new System.Drawing.Point(-6, 1);
+            this.manageReservations1.Name = "manageReservations1";
+            this.manageReservations1.Size = new System.Drawing.Size(1323, 681);
+            this.manageReservations1.TabIndex = 18;
+            this.manageReservations1.Visible = false;
+            // 
             // ReservationHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1266, 695);
+            this.ClientSize = new System.Drawing.Size(1266, 619);
+            this.Controls.Add(this.manageReservations1);
+            this.Controls.Add(this.modifybtn);
+            this.Controls.Add(this.rjButton2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.rjButton1);
@@ -98,5 +152,8 @@
         private CustomControls.RJControls.RJButton rjButton1;
         private TextBox textBox1;
         private TextBox textBox2;
+        private CustomControls.RJControls.RJButton rjButton2;
+        private CustomControls.RJControls.RJButton modifybtn;
+        private ManageReservations manageReservations1;
     }
 }

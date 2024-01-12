@@ -66,7 +66,9 @@ namespace HOTELAPP
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
-
+            ReservationHistory f3 = new ReservationHistory(username);//Create the new form
+            f3.Show();//display Form2 to the user
+            this.Close();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -98,6 +100,13 @@ namespace HOTELAPP
         {
             Form1 f1 = new Form1();
             f1.Show();
+            this.Close();
+        }
+
+        private void rjButton2_Click(object sender, EventArgs e)
+        {
+            PointShop f3 = new PointShop(username);//Create the new form
+            f3.Show();//display Form2 to the user
             this.Close();
         }
     }

@@ -59,7 +59,7 @@ namespace HOTELAPP
         private void Staff_Load(object sender, EventArgs e)
         {
             manageRooms1.Visible = false;
-            manageReservations1.Visible = false;
+            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -104,14 +104,13 @@ namespace HOTELAPP
         private void button3_Click(object sender, EventArgs e)
         {
             manageRooms1.Visible = true;
-            manageReservations1.Visible = false;
+            
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             manageRooms1.Visible = false;
-            manageReservations1.Visible = true;
         }
     }
 }
