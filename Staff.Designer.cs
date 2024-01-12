@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Staff));
             this.panel2 = new System.Windows.Forms.Panel();
             this.SidebarBtn = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -164,7 +165,7 @@
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(257, 647);
+            this.panel1.Size = new System.Drawing.Size(257, 678);
             this.panel1.TabIndex = 5;
             // 
             // panel3
@@ -219,24 +220,28 @@
             // manageRooms1
             // 
             this.manageRooms1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.manageRooms1.Location = new System.Drawing.Point(1, 0);
+            this.manageRooms1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("manageRooms1.BackgroundImage")));
+            this.manageRooms1.ForeColor = System.Drawing.SystemColors.Control;
+            this.manageRooms1.Location = new System.Drawing.Point(251, -35);
             this.manageRooms1.Name = "manageRooms1";
-            this.manageRooms1.Size = new System.Drawing.Size(1358, 647);
+            this.manageRooms1.Size = new System.Drawing.Size(1400, 674);
             this.manageRooms1.TabIndex = 9;
             // 
             // manageReservations1
             // 
-            this.manageReservations1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.manageReservations1.Location = new System.Drawing.Point(1, 0);
+            this.manageReservations1.BackColor = System.Drawing.Color.Transparent;
+            this.manageReservations1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("manageReservations1.BackgroundImage")));
+            this.manageReservations1.Location = new System.Drawing.Point(-14, -94);
             this.manageReservations1.Name = "manageReservations1";
-            this.manageReservations1.Size = new System.Drawing.Size(1358, 647);
+            this.manageReservations1.Size = new System.Drawing.Size(1450, 733);
             this.manageReservations1.TabIndex = 10;
             // 
             // Staff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1339, 636);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1184, 636);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.manageReservations1);
             this.Controls.Add(this.manageRooms1);
