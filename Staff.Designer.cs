@@ -43,6 +43,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.manageRooms1 = new HOTELAPP.ManageRooms();
+            this.addNewManualReservation1 = new HOTELAPP.AddNewManualReservation();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -87,7 +88,7 @@
             this.newreservation.ForeColor = System.Drawing.SystemColors.Control;
             this.newreservation.Image = global::HOTELAPP.Properties.Resources.check;
             this.newreservation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.newreservation.Location = new System.Drawing.Point(-45, -19);
+            this.newreservation.Location = new System.Drawing.Point(-45, -13);
             this.newreservation.Name = "newreservation";
             this.newreservation.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
             this.newreservation.Size = new System.Drawing.Size(341, 85);
@@ -95,6 +96,7 @@
             this.newreservation.Text = "        New Reservation";
             this.newreservation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.newreservation.UseVisualStyleBackColor = false;
+            this.newreservation.Click += new System.EventHandler(this.newreservation_Click);
             // 
             // panel5
             // 
@@ -192,10 +194,21 @@
             this.manageRooms1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.manageRooms1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("manageRooms1.BackgroundImage")));
             this.manageRooms1.ForeColor = System.Drawing.SystemColors.Control;
-            this.manageRooms1.Location = new System.Drawing.Point(35, 12);
+            this.manageRooms1.Location = new System.Drawing.Point(-8, -8);
             this.manageRooms1.Name = "manageRooms1";
-            this.manageRooms1.Size = new System.Drawing.Size(1400, 638);
+            this.manageRooms1.Size = new System.Drawing.Size(1462, 665);
             this.manageRooms1.TabIndex = 9;
+            this.manageRooms1.Visible = false;
+            // 
+            // addNewManualReservation1
+            // 
+            this.addNewManualReservation1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.addNewManualReservation1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("addNewManualReservation1.BackgroundImage")));
+            this.addNewManualReservation1.Location = new System.Drawing.Point(57, 0);
+            this.addNewManualReservation1.Name = "addNewManualReservation1";
+            this.addNewManualReservation1.Size = new System.Drawing.Size(1510, 675);
+            this.addNewManualReservation1.TabIndex = 10;
+            this.addNewManualReservation1.Visible = false;
             // 
             // Staff
             // 
@@ -205,6 +218,7 @@
             this.ClientSize = new System.Drawing.Size(1325, 636);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.manageRooms1);
+            this.Controls.Add(this.addNewManualReservation1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "Staff";
@@ -235,6 +249,6 @@
         private Label label1;
         private Label label3;
         private ManageRooms manageRooms1;
-        
+        private AddNewManualReservation addNewManualReservation1;
     }
 }

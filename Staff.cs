@@ -104,13 +104,16 @@ namespace HOTELAPP
         private void button3_Click(object sender, EventArgs e)
         {
             manageRooms1.Visible = true;
+            addNewManualReservation1.Visible= false;
             
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+        private void newreservation_Click(object sender, EventArgs e)
         {
-            manageRooms1.Visible = false;
+            addNewManualReservation1.Visible= true;
+            manageRooms1.Visible= false;
         }
     }
 }

@@ -47,7 +47,9 @@
             this.roomt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.roomt.FormattingEnabled = true;
             this.roomt.Items.AddRange(new object[] {
-            "sd"});
+            "1 Bed",
+            "2Beds",
+            "3Beds"});
             this.roomt.Location = new System.Drawing.Point(448, 159);
             this.roomt.Name = "roomt";
             this.roomt.Size = new System.Drawing.Size(309, 23);
