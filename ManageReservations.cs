@@ -72,7 +72,11 @@ namespace HOTELAPP
                 label6.Visible = true;
                 confirmbtn.Visible = true;
                 //bakılacak akşam
-                
+                dateTimePicker1.Visible = false;
+                dateTimePicker2.Visible = false;
+                label1.Visible = false;
+                label2.Visible =false;
+
             }
         }
     }

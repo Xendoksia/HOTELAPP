@@ -67,3 +67,8 @@ E:\VS Projeler\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Staff.resources
 C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.ManageReservations.resources
 C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
 C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.ManagerWindow.resources
+C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Dashboard.resources
+C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Employees.resources
+C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.EmployeeAdd.resources
+C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.ClientList.resources
+C:\Users\Deniz\Desktop\HOTELAPP\HOTELAPP\obj\Debug\net6.0-windows\HOTELAPP.Pricing.resources

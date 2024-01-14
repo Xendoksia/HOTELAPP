@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ıconButton1 = new FontAwesome.Sharp.IconButton();
             this.clientbtn = new FontAwesome.Sharp.IconButton();
             this.empbtn = new FontAwesome.Sharp.IconButton();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -39,10 +40,13 @@
             this.dashbbtn = new FontAwesome.Sharp.IconButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.rjCircularPictureBox1 = new CustomControls.RJControls.RJCircularPictureBox();
-            this.logout = new System.Windows.Forms.Label();
             this.labeldate = new System.Windows.Forms.Label();
-            this.ıconButton1 = new FontAwesome.Sharp.IconButton();
+            this.dashboard1 = new HOTELAPP.Dashboard();
+            this.employees1 = new HOTELAPP.Employees();
+            this.clientList1 = new HOTELAPP.ClientList();
+            this.pricing1 = new HOTELAPP.Pricing();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -63,6 +67,27 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(279, 644);
             this.panel1.TabIndex = 0;
+            // 
+            // ıconButton1
+            // 
+            this.ıconButton1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.ıconButton1.FlatAppearance.BorderSize = 0;
+            this.ıconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ıconButton1.Font = new System.Drawing.Font("Segoe UI Emoji", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ıconButton1.ForeColor = System.Drawing.Color.White;
+            this.ıconButton1.IconChar = FontAwesome.Sharp.IconChar.DollarSign;
+            this.ıconButton1.IconColor = System.Drawing.Color.WhiteSmoke;
+            this.ıconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ıconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ıconButton1.Location = new System.Drawing.Point(20, 368);
+            this.ıconButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ıconButton1.Name = "ıconButton1";
+            this.ıconButton1.Size = new System.Drawing.Size(259, 65);
+            this.ıconButton1.TabIndex = 3;
+            this.ıconButton1.Text = "        Pricing";
+            this.ıconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ıconButton1.UseVisualStyleBackColor = false;
+            this.ıconButton1.Click += new System.EventHandler(this.ıconButton1_Click_1);
             // 
             // clientbtn
             // 
@@ -159,7 +184,7 @@
             this.dashbbtn.IconColor = System.Drawing.Color.WhiteSmoke;
             this.dashbbtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.dashbbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.dashbbtn.Location = new System.Drawing.Point(18, 159);
+            this.dashbbtn.Location = new System.Drawing.Point(17, 160);
             this.dashbbtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dashbbtn.Name = "dashbbtn";
             this.dashbbtn.Size = new System.Drawing.Size(259, 61);
@@ -175,14 +200,30 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel2.Controls.Add(this.linkLabel1);
             this.panel2.Controls.Add(this.rjCircularPictureBox1);
-            this.panel2.Controls.Add(this.logout);
             this.panel2.Controls.Add(this.labeldate);
             this.panel2.Location = new System.Drawing.Point(272, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1064, 126);
             this.panel2.TabIndex = 1;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.MediumBlue;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.DisabledLinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI Emoji", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.linkLabel1.ForeColor = System.Drawing.Color.White;
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.White;
+            this.linkLabel1.Location = new System.Drawing.Point(936, 77);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(115, 35);
+            this.linkLabel1.TabIndex = 4;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Log Out";
             // 
             // rjCircularPictureBox1
             // 
@@ -193,24 +234,12 @@
             this.rjCircularPictureBox1.BorderSize = 2;
             this.rjCircularPictureBox1.GradientAngle = 50F;
             this.rjCircularPictureBox1.Image = global::HOTELAPP.Properties.Resources._150708;
-            this.rjCircularPictureBox1.Location = new System.Drawing.Point(980, 3);
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(949, 3);
             this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
             this.rjCircularPictureBox1.Size = new System.Drawing.Size(71, 71);
             this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.rjCircularPictureBox1.TabIndex = 3;
             this.rjCircularPictureBox1.TabStop = false;
-            // 
-            // logout
-            // 
-            this.logout.AutoSize = true;
-            this.logout.Font = new System.Drawing.Font("Myanmar Text", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.logout.ForeColor = System.Drawing.Color.White;
-            this.logout.Location = new System.Drawing.Point(978, 77);
-            this.logout.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.logout.Name = "logout";
-            this.logout.Size = new System.Drawing.Size(82, 34);
-            this.logout.TabIndex = 2;
-            this.logout.Text = "Log Out";
             // 
             // labeldate
             // 
@@ -224,26 +253,41 @@
             this.labeldate.TabIndex = 0;
             this.labeldate.Text = "label3";
             // 
-            // ıconButton1
+            // dashboard1
             // 
-            this.ıconButton1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ıconButton1.FlatAppearance.BorderSize = 0;
-            this.ıconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ıconButton1.Font = new System.Drawing.Font("Segoe UI Emoji", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ıconButton1.ForeColor = System.Drawing.Color.White;
-            this.ıconButton1.IconChar = FontAwesome.Sharp.IconChar.DollarSign;
-            this.ıconButton1.IconColor = System.Drawing.Color.WhiteSmoke;
-            this.ıconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ıconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton1.Location = new System.Drawing.Point(20, 368);
-            this.ıconButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ıconButton1.Name = "ıconButton1";
-            this.ıconButton1.Size = new System.Drawing.Size(259, 65);
-            this.ıconButton1.TabIndex = 3;
-            this.ıconButton1.Text = "        Pricing";
-            this.ıconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ıconButton1.UseVisualStyleBackColor = false;
-            this.ıconButton1.Click += new System.EventHandler(this.ıconButton1_Click_1);
+            this.dashboard1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.dashboard1.Location = new System.Drawing.Point(260, 160);
+            this.dashboard1.Name = "dashboard1";
+            this.dashboard1.Size = new System.Drawing.Size(982, 450);
+            this.dashboard1.TabIndex = 2;
+            // 
+            // employees1
+            // 
+            this.employees1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.employees1.ForeColor = System.Drawing.Color.Coral;
+            this.employees1.Location = new System.Drawing.Point(278, 132);
+            this.employees1.Name = "employees1";
+            this.employees1.Size = new System.Drawing.Size(1058, 526);
+            this.employees1.TabIndex = 3;
+            this.employees1.Visible = false;
+            // 
+            // clientList1
+            // 
+            this.clientList1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.clientList1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.clientList1.Location = new System.Drawing.Point(278, 132);
+            this.clientList1.Name = "clientList1";
+            this.clientList1.Size = new System.Drawing.Size(1087, 538);
+            this.clientList1.TabIndex = 5;
+            // 
+            // pricing1
+            // 
+            this.pricing1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.pricing1.Location = new System.Drawing.Point(278, 130);
+            this.pricing1.Name = "pricing1";
+            this.pricing1.Size = new System.Drawing.Size(1024, 528);
+            this.pricing1.TabIndex = 5;
+            this.pricing1.Visible = false;
             // 
             // ManagerWindow
             // 
@@ -251,10 +295,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(1335, 642);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pricing1);
+            this.Controls.Add(this.employees1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.dashboard1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.clientList1);
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "ManagerWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManagerWindow";
             this.Load += new System.EventHandler(this.ManagerWindow_Load);
             this.panel1.ResumeLayout(false);
@@ -281,7 +330,11 @@
         private FontAwesome.Sharp.IconButton clientbtn;
         private FontAwesome.Sharp.IconButton empbtn;
         private CustomControls.RJControls.RJCircularPictureBox rjCircularPictureBox1;
-        private Label logout;
         private FontAwesome.Sharp.IconButton ıconButton1;
+        private Dashboard dashboard1;
+        private LinkLabel linkLabel1;
+        private Employees employees1;
+        private ClientList clientList1;
+        private Pricing pricing1;
     }
 }

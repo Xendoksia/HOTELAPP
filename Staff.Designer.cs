@@ -235,6 +235,6 @@
         private Label label1;
         private Label label3;
         private ManageRooms manageRooms1;
-        private ManageReservations manageReservations1;
+        
     }
 }

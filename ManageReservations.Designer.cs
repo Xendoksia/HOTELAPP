@@ -44,13 +44,14 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Change Dates",
             "Change Room Type"});
             this.comboBox1.Location = new System.Drawing.Point(390, 93);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(445, 23);
+            this.comboBox1.Size = new System.Drawing.Size(445, 43);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -94,10 +95,15 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "3 Bed",
+            "2 Bed",
+            "Single Bed"});
             this.comboBox2.Location = new System.Drawing.Point(487, 195);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(194, 23);
+            this.comboBox2.Size = new System.Drawing.Size(194, 43);
             this.comboBox2.TabIndex = 5;
             this.comboBox2.Visible = false;
             // 
@@ -115,7 +121,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(576, 221);
+            this.label4.Location = new System.Drawing.Point(487, 241);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 15);
             this.label4.TabIndex = 7;
