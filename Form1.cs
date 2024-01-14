@@ -79,6 +79,8 @@ namespace HOTELAPP
                                 break;
 
                             case "Manager":
+                                ManagerWindow manage = new ManagerWindow();
+                                manage.Show();
                                 break;
                         }
 
@@ -103,9 +105,6 @@ namespace HOTELAPP
                     sqlConnection.Sql.Close();
                 }
             }
-
-
-
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -122,7 +121,7 @@ namespace HOTELAPP
         }
 
 
-       
+
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {

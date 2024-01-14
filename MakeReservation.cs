@@ -1,12 +1,14 @@
-﻿using System.Data.SqlClient;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System.Data.SqlClient;
 using System.Drawing.Drawing2D;
+using System.Numerics;
 
 namespace HOTELAPP
 {
     public partial class MakeReservation : Form
     {
         string username;
-        string[] price = new string[10];
+        List<string> price = new List<string>();
 
         public MakeReservation(string user)
         {
@@ -45,8 +47,7 @@ namespace HOTELAPP
             return bitmap;
         }
 
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) // farklı şey seçince
         {
             pictureBox1.Visible = false;
             pictureBox2.Visible = false;
@@ -133,7 +134,7 @@ namespace HOTELAPP
             comboBox1.SelectedIndex = -1;
         }
 
-        private void rjButton3_Click(object sender, EventArgs e)
+        private void rjButton3_Click(object sender, EventArgs e) // search butonu
         {
             comboBox1.Items.Clear();
             comboBox1.Items.Insert(0, "Please Select a Room Type");
@@ -141,38 +142,52 @@ namespace HOTELAPP
 
             ConfigureSQL sqlConnection = new ConfigureSQL();
             sqlConnection.Sql.Open();
-            SqlCommand roomCmd = new SqlCommand("SELECT * FROM [RoomInventory]", sqlConnection.Sql);
-            SqlDataReader roomTable = roomCmd.ExecuteReader();
+            SqlCommand command = new SqlCommand("SELECT room_id, price FROM [RoomInventory]", sqlConnection.Sql);
+            SqlDataReader reader = command.ExecuteReader();
 
-            int i = 0;
-            while (roomTable.Read())
+            List<string> roomids = new List<string>();
+            while (reader.Read())
             {
-                try
-                {
-                    DateTime resIn = roomTable.GetDateTime(5);
-                    DateTime resOut = roomTable.GetDateTime(6);
-                    DateTime dateIn = dateTimePicker1.Value.Date;
-                    DateTime dateOut = dateTimePicker2.Value.Date;
-                    if (!(resIn <= dateIn && resOut >= dateIn) && !(resIn <= dateOut && resOut >= dateOut))
-                    {
-                        comboBox1.Items.Add(roomTable[1]);
-                        price[i] = roomTable[4].ToString();
-                    }
-                }
-                catch (Exception ex)
-                {
-                    comboBox1.Items.Add(roomTable[1]);
-                    price[i] = roomTable[4].ToString();
-                }
-                i++;
+                roomids.Add(reader[0].ToString());
+                price.Add(reader[1].ToString());
             }
+            reader.Close();
+
+            command = new SqlCommand("SELECT room_id, check_in_date, check_out_date FROM [Reservation]", sqlConnection.Sql);
+            reader = command.ExecuteReader();
+
+            DateTime dateIn = dateTimePicker1.Value.Date;
+            DateTime dateOut = dateTimePicker2.Value.Date;
+
+            while (reader.Read())
+            {
+                DateTime resIn = reader.GetDateTime(1);
+                DateTime resOut = reader.GetDateTime(2);
+
+                if ((resIn <= dateIn && resOut >= dateIn) || (resIn <= dateOut && resOut >= dateOut))
+                    roomids.Remove(reader[0].ToString());
+                    
+            }
+            reader.Close();
+
+            command = new SqlCommand("SELECT room_type, price FROM [RoomInventory] WHERE room_id = @id", sqlConnection.Sql);
+            foreach(string type in roomids)
+            {
+                command.Parameters.AddWithValue("@id", type);
+                reader = command.ExecuteReader();
+                reader.Read();
+                comboBox1.Items.Add(reader[0]);
+                reader.Close();
+                command.Parameters.Clear();
+            }
+
             sqlConnection.Sql.Close();
         }
 
-        private void rjButton2_Click(object sender, EventArgs e)
+        private void rjButton2_Click(object sender, EventArgs e) // rezervasyon butonu
         {
-            int id = comboBox1.SelectedIndex - 1;
-            if (id == -1) return;
+            int index = comboBox1.SelectedIndex - 1;
+            if (index == -1) return;
             DateTime dateIn = dateTimePicker1.Value.Date;
             DateTime dateOut = dateTimePicker2.Value.Date;
             
@@ -180,12 +195,34 @@ namespace HOTELAPP
             ConfigureSQL sqlConnection = new ConfigureSQL();
             sqlConnection.Sql.Open();
 
-            SqlCommand updateCmd = new SqlCommand("UPDATE RoomInventory SET reservation_in = @in, reservation_out = @out WHERE room_id = @id", sqlConnection.Sql);
-            updateCmd.Parameters.AddWithValue("@in", dateIn);
-            updateCmd.Parameters.AddWithValue("@out", dateOut);
-            updateCmd.Parameters.AddWithValue("@id", id);
-            updateCmd.ExecuteNonQuery();
+            SqlCommand command = new SqlCommand("SELECT room_id FROM [RoomInventory] WHERE room_type = @roomname", sqlConnection.Sql);
+            string roomName = comboBox1.SelectedItem.ToString();
+            command.Parameters.AddWithValue("@roomname", roomName);
+            SqlDataReader reader = command.ExecuteReader();
+            reader.Read();
+            string room = reader[0].ToString();
+            int roomid = int.Parse(room);
+            reader.Close();
+
+            command = new SqlCommand("SELECT * FROM [ReservationIDCounter]", sqlConnection.Sql);
+            reader = command.ExecuteReader();
+            reader.Read();
+            int reservationId = int.Parse(reader[0].ToString()) + 1;
+            reader.Close();
+
+            command = new SqlCommand("INSERT INTO [Reservation] (reservation_id,guestname,room_id,check_in_date,check_out_date) values (@resid,@guest,@roomid,@in,@out)", sqlConnection.Sql);
+            command.Parameters.AddWithValue("@resid", reservationId);
+            command.Parameters.AddWithValue("@guest", username);
+            command.Parameters.AddWithValue("@roomid", roomid);
+            command.Parameters.AddWithValue("@in", dateIn);
+            command.Parameters.AddWithValue("@out", dateOut);
+            command.ExecuteNonQuery();
+
             MessageBox.Show("rezervasyon yapıldı.");
+
+            command = new SqlCommand("UPDATE [ReservationIDCounter] SET id = @id", sqlConnection.Sql);
+            command.Parameters.AddWithValue("@id", reservationId);
+            command.ExecuteNonQuery();
 
             comboBox1.Items.Clear();
             comboBox1.Items.Insert(0, "Please Select a Room Type");
