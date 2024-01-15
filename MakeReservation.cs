@@ -2,6 +2,7 @@
 using System.Data.SqlClient;
 using System.Drawing.Drawing2D;
 using System.Numerics;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace HOTELAPP
 {
@@ -186,6 +187,7 @@ namespace HOTELAPP
 
         private void rjButton2_Click(object sender, EventArgs e) // rezervasyon butonu
         {
+
             int index = comboBox1.SelectedIndex - 1;
             if (index == -1) return;
             DateTime dateIn = dateTimePicker1.Value.Date;
@@ -218,7 +220,7 @@ namespace HOTELAPP
             command.Parameters.AddWithValue("@out", dateOut);
             command.ExecuteNonQuery();
 
-            MessageBox.Show("rezervasyon yapıldı.");
+            MessageBox.Show("Reservation complete (+5 points)");
 
             command = new SqlCommand("UPDATE [ReservationIDCounter] SET id = @id", sqlConnection.Sql);
             command.Parameters.AddWithValue("@id", reservationId);
@@ -227,6 +229,31 @@ namespace HOTELAPP
             comboBox1.Items.Clear();
             comboBox1.Items.Insert(0, "Please Select a Room Type");
             comboBox1.SelectedIndex = 0;
+
+            try
+            {
+                command.Parameters.Clear();
+                command = new SqlCommand("SELECT loyalty_points FROM [RewardLoyalty] WHERE guestname = @user", sqlConnection.Sql);
+                command.Parameters.AddWithValue("@user", username);
+                reader = command.ExecuteReader();
+                reader.Read();
+                int points = int.Parse(reader[0].ToString()) + 5;
+                reader.Close();
+                command.Parameters.Clear();
+                command = new SqlCommand("UPDATE [RewardLoyalty] SET loyalty_points = @newpoint WHERE guestname = @user", sqlConnection.Sql);
+                command.Parameters.AddWithValue("@user", username);
+                command.Parameters.AddWithValue("@newpoint", points);
+                command.ExecuteNonQuery();
+            }
+            catch(Exception ex)
+            {
+                reader.Close();
+                command.Parameters.Clear();
+                command = new SqlCommand("INSERT INTO [RewardLoyalty](guestname, loyalty_points) VALUES (@user, 5)", sqlConnection.Sql);
+                command.Parameters.AddWithValue("@user", username);
+                command.ExecuteNonQuery();
+            }
+
 
             sqlConnection.Sql.Close();
         }

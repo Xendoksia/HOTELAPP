@@ -49,7 +49,7 @@ namespace HOTELAPP
 
         private void ReservationHistory_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void rjButton1_Click(object sender, EventArgs e)
@@ -62,6 +62,11 @@ namespace HOTELAPP
         private void modifybtn_Click(object sender, EventArgs e)
         {
             manageReservations1.Visible = true;
+        }
+
+        private void manageReservations1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

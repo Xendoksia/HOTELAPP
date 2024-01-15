@@ -29,122 +29,128 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReservationHistory));
-            this.rjButton1 = new CustomControls.RJControls.RJButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.rjButton2 = new CustomControls.RJControls.RJButton();
-            this.modifybtn = new CustomControls.RJControls.RJButton();
-            this.manageReservations1 = new HOTELAPP.ManageReservations();
-            this.SuspendLayout();
+            rjButton1 = new CustomControls.RJControls.RJButton();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            rjButton2 = new CustomControls.RJControls.RJButton();
+            modifybtn = new CustomControls.RJControls.RJButton();
+            manageReservations1 = new ManageReservations();
+            SuspendLayout();
             // 
             // rjButton1
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.Purple;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.Purple;
-            this.rjButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.rjButton1.BorderColor = System.Drawing.Color.White;
-            this.rjButton1.BorderRadius = 10;
-            this.rjButton1.BorderSize = 1;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Image = global::HOTELAPP.Properties.Resources.undo_21;
-            this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton1.Location = new System.Drawing.Point(42, 42);
-            this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(144, 52);
-            this.rjButton1.TabIndex = 13;
-            this.rjButton1.Text = "Go Back";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
+            rjButton1.BackColor = Color.Purple;
+            rjButton1.BackgroundColor = Color.Purple;
+            rjButton1.BackgroundImageLayout = ImageLayout.None;
+            rjButton1.BorderColor = Color.White;
+            rjButton1.BorderRadius = 10;
+            rjButton1.BorderSize = 1;
+            rjButton1.FlatAppearance.BorderSize = 0;
+            rjButton1.FlatStyle = FlatStyle.Flat;
+            rjButton1.ForeColor = Color.White;
+            rjButton1.Image = Properties.Resources.undo_21;
+            rjButton1.ImageAlign = ContentAlignment.MiddleLeft;
+            rjButton1.Location = new Point(48, 56);
+            rjButton1.Margin = new Padding(3, 5, 3, 5);
+            rjButton1.Name = "rjButton1";
+            rjButton1.Size = new Size(165, 69);
+            rjButton1.TabIndex = 13;
+            rjButton1.Text = "Go Back";
+            rjButton1.TextColor = Color.White;
+            rjButton1.UseVisualStyleBackColor = false;
+            rjButton1.Click += rjButton1_Click;
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.textBox1.Location = new System.Drawing.Point(318, 114);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(639, 61);
-            this.textBox1.TabIndex = 14;
-            this.textBox1.Text = "burda alt alta eklenicek yeşil olan aktif olan kırmızılar geçmiş olan";
+            textBox1.BackColor = Color.MediumAquamarine;
+            textBox1.Location = new Point(363, 152);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(730, 80);
+            textBox1.TabIndex = 14;
+            textBox1.Text = "burda alt alta eklenicek yeşil olan aktif olan kırmızılar geçmiş olan";
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Crimson;
-            this.textBox2.Location = new System.Drawing.Point(318, 196);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(639, 61);
-            this.textBox2.TabIndex = 15;
-            this.textBox2.Text = "burda alt alta eklenicek yeşil olan aktif olan kırmızılar geçmiş olan";
+            textBox2.BackColor = Color.Crimson;
+            textBox2.Location = new Point(363, 261);
+            textBox2.Margin = new Padding(3, 4, 3, 4);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(730, 80);
+            textBox2.TabIndex = 15;
+            textBox2.Text = "burda alt alta eklenicek yeşil olan aktif olan kırmızılar geçmiş olan";
             // 
             // rjButton2
             // 
-            this.rjButton2.BackColor = System.Drawing.Color.Purple;
-            this.rjButton2.BackgroundColor = System.Drawing.Color.Purple;
-            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton2.BorderRadius = 0;
-            this.rjButton2.BorderSize = 0;
-            this.rjButton2.FlatAppearance.BorderSize = 0;
-            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(963, 125);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(71, 38);
-            this.rjButton2.TabIndex = 16;
-            this.rjButton2.Text = "Cancel";
-            this.rjButton2.TextColor = System.Drawing.Color.White;
-            this.rjButton2.UseVisualStyleBackColor = false;
+            rjButton2.BackColor = Color.Purple;
+            rjButton2.BackgroundColor = Color.Purple;
+            rjButton2.BorderColor = Color.PaleVioletRed;
+            rjButton2.BorderRadius = 0;
+            rjButton2.BorderSize = 0;
+            rjButton2.FlatAppearance.BorderSize = 0;
+            rjButton2.FlatStyle = FlatStyle.Flat;
+            rjButton2.ForeColor = Color.White;
+            rjButton2.Location = new Point(1101, 167);
+            rjButton2.Margin = new Padding(3, 4, 3, 4);
+            rjButton2.Name = "rjButton2";
+            rjButton2.Size = new Size(81, 51);
+            rjButton2.TabIndex = 16;
+            rjButton2.Text = "Cancel";
+            rjButton2.TextColor = Color.White;
+            rjButton2.UseVisualStyleBackColor = false;
             // 
             // modifybtn
             // 
-            this.modifybtn.BackColor = System.Drawing.Color.Purple;
-            this.modifybtn.BackgroundColor = System.Drawing.Color.Purple;
-            this.modifybtn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.modifybtn.BorderRadius = 0;
-            this.modifybtn.BorderSize = 0;
-            this.modifybtn.FlatAppearance.BorderSize = 0;
-            this.modifybtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.modifybtn.ForeColor = System.Drawing.Color.White;
-            this.modifybtn.Location = new System.Drawing.Point(1056, 125);
-            this.modifybtn.Name = "modifybtn";
-            this.modifybtn.Size = new System.Drawing.Size(71, 38);
-            this.modifybtn.TabIndex = 17;
-            this.modifybtn.Text = "Modify";
-            this.modifybtn.TextColor = System.Drawing.Color.White;
-            this.modifybtn.UseVisualStyleBackColor = false;
-            this.modifybtn.Click += new System.EventHandler(this.modifybtn_Click);
+            modifybtn.BackColor = Color.Purple;
+            modifybtn.BackgroundColor = Color.Purple;
+            modifybtn.BorderColor = Color.PaleVioletRed;
+            modifybtn.BorderRadius = 0;
+            modifybtn.BorderSize = 0;
+            modifybtn.FlatAppearance.BorderSize = 0;
+            modifybtn.FlatStyle = FlatStyle.Flat;
+            modifybtn.ForeColor = Color.White;
+            modifybtn.Location = new Point(1207, 167);
+            modifybtn.Margin = new Padding(3, 4, 3, 4);
+            modifybtn.Name = "modifybtn";
+            modifybtn.Size = new Size(81, 51);
+            modifybtn.TabIndex = 17;
+            modifybtn.Text = "Modify";
+            modifybtn.TextColor = Color.White;
+            modifybtn.UseVisualStyleBackColor = false;
+            modifybtn.Click += modifybtn_Click;
             // 
             // manageReservations1
             // 
-            this.manageReservations1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.manageReservations1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("manageReservations1.BackgroundImage")));
-            this.manageReservations1.Location = new System.Drawing.Point(-6, 1);
-            this.manageReservations1.Name = "manageReservations1";
-            this.manageReservations1.Size = new System.Drawing.Size(1323, 681);
-            this.manageReservations1.TabIndex = 18;
-            this.manageReservations1.Visible = false;
+            manageReservations1.BackColor = SystemColors.ScrollBar;
+            manageReservations1.BackgroundImage = (Image)resources.GetObject("manageReservations1.BackgroundImage");
+            manageReservations1.Location = new Point(-7, 1);
+            manageReservations1.Margin = new Padding(3, 5, 3, 5);
+            manageReservations1.Name = "manageReservations1";
+            manageReservations1.Size = new Size(1512, 908);
+            manageReservations1.TabIndex = 18;
+            manageReservations1.Visible = false;
+            manageReservations1.Load += manageReservations1_Load;
             // 
             // ReservationHistory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1266, 619);
-            this.Controls.Add(this.manageReservations1);
-            this.Controls.Add(this.modifybtn);
-            this.Controls.Add(this.rjButton2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.rjButton1);
-            this.Name = "ReservationHistory";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ReservationHistory";
-            this.Load += new System.EventHandler(this.ReservationHistory_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1447, 825);
+            Controls.Add(manageReservations1);
+            Controls.Add(modifybtn);
+            Controls.Add(rjButton2);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Controls.Add(rjButton1);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "ReservationHistory";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "ReservationHistory";
+            Load += ReservationHistory_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
