@@ -130,5 +130,7 @@ namespace HOTELAPP
             f3.Show();//display Form2 to the user
             this.Close();
         }
+
+        
     }
 }

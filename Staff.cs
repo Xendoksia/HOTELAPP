@@ -119,5 +119,12 @@ namespace HOTELAPP
             label1.Visible = false;
             label3.Visible = false;
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+            this.Close();
+        }
     }
 }
