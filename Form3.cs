@@ -68,7 +68,7 @@ namespace HOTELAPP
             else
             {
                 // Handle the case where no loyalty points are found for the given room type
-                label5.Text = "No loyalty points found for room type: " + label5.Text;
+                label5.Text = " Loyalty Points : 0 " ;
             }
 
             loyal.Close();
