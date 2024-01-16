@@ -98,7 +98,7 @@ namespace HOTELAPP
                         textBox1.Text = price[i] + " per night";
                         break;
                 }
-                
+
                 sqlConnection.Sql.Close();
             }
         }
@@ -106,6 +106,7 @@ namespace HOTELAPP
         {
             comboBox1.Items.Insert(0, "Please Select a Room Type");
             comboBox1.SelectedIndex = 0;
+            comboBox2.SelectedIndex = 0;
             textBox3.ReadOnly = true;
             textBox2.ReadOnly = true;
             textBox1.ReadOnly = true;
@@ -135,15 +136,39 @@ namespace HOTELAPP
             comboBox1.SelectedIndex = -1;
         }
 
-        private void rjButton3_Click(object sender, EventArgs e) // search butonu
+        private void rjButton3_Click(object sender, EventArgs e) // searching
         {
             comboBox1.Items.Clear();
             comboBox1.Items.Insert(0, "Please Select a Room Type");
             comboBox1.SelectedIndex = 0;
+            string bedCountStr = comboBox2.SelectedItem.ToString();
+            int bedCount = 0;
+            switch (bedCountStr)
+            {
+                case "All":
+                    bedCount = 0;
+                    break;
+                case "1 Bed":
+                    bedCount = 1;
+                    break;
+                case "2 Beds":
+                    bedCount = 2;
+                    break;
+                case "3 Beds":
+                    bedCount = 3;
+                    break;
+            }
 
             ConfigureSQL sqlConnection = new ConfigureSQL();
             sqlConnection.Sql.Open();
-            SqlCommand command = new SqlCommand("SELECT room_id, price FROM [RoomInventory]", sqlConnection.Sql);
+            SqlCommand command = new SqlCommand();
+
+            if (bedCountStr == "All") command = new SqlCommand("SELECT room_id, price FROM [RoomInventory]", sqlConnection.Sql);
+            else
+            {
+                command = new SqlCommand("SELECT room_id, price FROM [RoomInventory] WHERE capacity = @bed", sqlConnection.Sql);
+                command.Parameters.AddWithValue("@bed", bedCount);
+            }
             SqlDataReader reader = command.ExecuteReader();
 
             List<string> roomids = new List<string>();
@@ -167,12 +192,12 @@ namespace HOTELAPP
 
                 if ((resIn <= dateIn && resOut >= dateIn) || (resIn <= dateOut && resOut >= dateOut))
                     roomids.Remove(reader[0].ToString());
-                    
+
             }
             reader.Close();
 
             command = new SqlCommand("SELECT room_type, price FROM [RoomInventory] WHERE room_id = @id", sqlConnection.Sql);
-            foreach(string type in roomids)
+            foreach (string type in roomids)
             {
                 command.Parameters.AddWithValue("@id", type);
                 reader = command.ExecuteReader();
@@ -185,14 +210,13 @@ namespace HOTELAPP
             sqlConnection.Sql.Close();
         }
 
-        private void rjButton2_Click(object sender, EventArgs e) // rezervasyon butonu
+        private void rjButton2_Click(object sender, EventArgs e) // reservation button
         {
 
             int index = comboBox1.SelectedIndex - 1;
             if (index == -1) return;
             DateTime dateIn = dateTimePicker1.Value.Date;
             DateTime dateOut = dateTimePicker2.Value.Date;
-            
 
             ConfigureSQL sqlConnection = new ConfigureSQL();
             sqlConnection.Sql.Open();
@@ -206,7 +230,7 @@ namespace HOTELAPP
             int roomid = int.Parse(room);
             reader.Close();
 
-            command = new SqlCommand("SELECT * FROM [ReservationIDCounter]", sqlConnection.Sql);
+            command = new SqlCommand("SELECT * FROM [ReservationIDCounter]", sqlConnection.Sql); // unique id for reservation
             reader = command.ExecuteReader();
             reader.Read();
             int reservationId = int.Parse(reader[0].ToString()) + 1;
@@ -220,8 +244,6 @@ namespace HOTELAPP
             command.Parameters.AddWithValue("@out", dateOut);
             command.ExecuteNonQuery();
 
-            MessageBox.Show("Reservation complete (+5 points)");
-
             command = new SqlCommand("UPDATE [ReservationIDCounter] SET id = @id", sqlConnection.Sql);
             command.Parameters.AddWithValue("@id", reservationId);
             command.ExecuteNonQuery();
@@ -230,7 +252,7 @@ namespace HOTELAPP
             comboBox1.Items.Insert(0, "Please Select a Room Type");
             comboBox1.SelectedIndex = 0;
 
-            try
+            try // earning points
             {
                 command.Parameters.Clear();
                 command = new SqlCommand("SELECT loyalty_points FROM [RewardLoyalty] WHERE guestname = @user", sqlConnection.Sql);
@@ -245,7 +267,7 @@ namespace HOTELAPP
                 command.Parameters.AddWithValue("@newpoint", points);
                 command.ExecuteNonQuery();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 reader.Close();
                 command.Parameters.Clear();
@@ -253,9 +275,20 @@ namespace HOTELAPP
                 command.Parameters.AddWithValue("@user", username);
                 command.ExecuteNonQuery();
             }
-
-
             sqlConnection.Sql.Close();
+
+
+            MessageBox.Show("Reservation complete (+5 points)");
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

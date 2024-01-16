@@ -43,6 +43,10 @@
             rjButton1 = new CustomControls.RJControls.RJButton();
             rjButton2 = new CustomControls.RJControls.RJButton();
             rjButton3 = new CustomControls.RJControls.RJButton();
+            comboBox2 = new ComboBox();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -89,7 +93,7 @@
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.Font = new Font("Arial", 15.19F, FontStyle.Regular, GraphicsUnit.Point);
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(687, 153);
+            comboBox1.Location = new Point(667, 155);
             comboBox1.Margin = new Padding(3, 4, 3, 4);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(444, 36);
@@ -101,7 +105,7 @@
             dateTimePicker1.Checked = false;
             dateTimePicker1.Font = new Font("Segoe UI Semibold", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
             dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(687, 94);
+            dateTimePicker1.Location = new Point(634, 94);
             dateTimePicker1.Margin = new Padding(3, 4, 3, 4);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(134, 36);
@@ -112,7 +116,7 @@
             // 
             dateTimePicker2.Font = new Font("Segoe UI Semibold", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
             dateTimePicker2.Format = DateTimePickerFormat.Short;
-            dateTimePicker2.Location = new Point(827, 94);
+            dateTimePicker2.Location = new Point(774, 93);
             dateTimePicker2.Margin = new Padding(3, 4, 3, 4);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(133, 36);
@@ -168,11 +172,11 @@
             // textBox4
             // 
             textBox4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox4.Location = new Point(687, 220);
+            textBox4.Location = new Point(687, 217);
             textBox4.Margin = new Padding(3, 4, 3, 4);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(402, 295);
+            textBox4.Size = new Size(402, 298);
             textBox4.TabIndex = 10;
             textBox4.Text = resources.GetString("textBox4.Text");
             textBox4.Visible = false;
@@ -235,7 +239,7 @@
             rjButton3.FlatStyle = FlatStyle.Flat;
             rjButton3.ForeColor = Color.White;
             rjButton3.ImageAlign = ContentAlignment.MiddleLeft;
-            rjButton3.Location = new Point(966, 94);
+            rjButton3.Location = new Point(1019, 93);
             rjButton3.Margin = new Padding(3, 4, 3, 4);
             rjButton3.Name = "rjButton3";
             rjButton3.Size = new Size(144, 36);
@@ -245,11 +249,65 @@
             rjButton3.UseVisualStyleBackColor = false;
             rjButton3.Click += rjButton3_Click;
             // 
+            // comboBox2
+            // 
+            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox2.Font = new Font("Arial", 15.19F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "All", "3 Beds", "2 Beds", "1 Bed" });
+            comboBox2.Location = new Point(913, 93);
+            comboBox2.Margin = new Padding(3, 4, 3, 4);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(100, 36);
+            comboBox2.TabIndex = 14;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(913, 61);
+            label2.Name = "label2";
+            label2.Size = new Size(81, 28);
+            label2.TabIndex = 15;
+            label2.Text = "Choose:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(634, 62);
+            label3.Name = "label3";
+            label3.Size = new Size(89, 28);
+            label3.TabIndex = 16;
+            label3.Text = "Check In:";
+            label3.Click += label3_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(774, 62);
+            label4.Name = "label4";
+            label4.Size = new Size(106, 28);
+            label4.TabIndex = 17;
+            label4.Text = "Check Out:";
+            label4.Click += label4_Click;
+            // 
             // MakeReservation
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1266, 695);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(comboBox2);
             Controls.Add(rjButton3);
             Controls.Add(rjButton2);
             Controls.Add(rjButton1);
@@ -293,5 +351,9 @@
         private CustomControls.RJControls.RJButton rjButton1;
         private CustomControls.RJControls.RJButton rjButton2;
         private CustomControls.RJControls.RJButton rjButton3;
+        private ComboBox comboBox2;
+        private Label label2;
+        private Label label3;
+        private Label label4;
     }
 }
