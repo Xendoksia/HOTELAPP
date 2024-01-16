@@ -41,6 +41,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.addbtn = new CustomControls.RJControls.RJButton();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -103,9 +107,8 @@
             this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Cleaner",
-            "Receptionist",
-            "Maintenance Staff"});
+            "Male ",
+            "Female"});
             this.comboBox1.Location = new System.Drawing.Point(713, 330);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(228, 33);
@@ -118,9 +121,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(127, 101);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 14);
+            this.label1.Size = new System.Drawing.Size(83, 14);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Name :";
+            this.label1.Text = "Username :";
             // 
             // label2
             // 
@@ -151,9 +154,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(713, 101);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 14);
+            this.label4.Size = new System.Drawing.Size(54, 14);
             this.label4.TabIndex = 9;
-            this.label4.Text = "ID :";
+            this.label4.Text = "Name :";
             // 
             // label5
             // 
@@ -173,9 +176,9 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(713, 313);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 14);
+            this.label6.Size = new System.Drawing.Size(64, 14);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Role :";
+            this.label6.Text = "Gender :";
             // 
             // addbtn
             // 
@@ -188,7 +191,7 @@
             this.addbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addbtn.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.addbtn.ForeColor = System.Drawing.Color.White;
-            this.addbtn.Location = new System.Drawing.Point(451, 401);
+            this.addbtn.Location = new System.Drawing.Point(463, 456);
             this.addbtn.Name = "addbtn";
             this.addbtn.Size = new System.Drawing.Size(160, 49);
             this.addbtn.TabIndex = 12;
@@ -197,12 +200,62 @@
             this.addbtn.UseVisualStyleBackColor = false;
             this.addbtn.Click += new System.EventHandler(this.addbtn_Click);
             // 
+            // comboBox2
+            // 
+            this.comboBox2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Staff",
+            "Manager"});
+            this.comboBox2.Location = new System.Drawing.Point(422, 395);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(228, 33);
+            this.comboBox2.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(422, 378);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(45, 14);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Role :";
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.RoyalBlue;
+            this.textBox5.ForeColor = System.Drawing.Color.White;
+            this.textBox5.Location = new System.Drawing.Point(422, 118);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(228, 30);
+            this.textBox5.TabIndex = 15;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(422, 101);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 14);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "E-mail :";
+            // 
             // EmployeeAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(1166, 594);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.addbtn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -239,5 +292,9 @@
         private Label label5;
         private Label label6;
         private CustomControls.RJControls.RJButton addbtn;
+        private ComboBox comboBox2;
+        private Label label7;
+        private TextBox textBox5;
+        private Label label8;
     }
 }

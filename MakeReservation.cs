@@ -1,7 +1,10 @@
 ﻿using Microsoft.VisualBasic.ApplicationServices;
 using System.Data.SqlClient;
 using System.Drawing.Drawing2D;
+using System.Net;
+using System.Net.Mail;
 using System.Numerics;
+//using System.Windows;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace HOTELAPP
@@ -62,7 +65,7 @@ namespace HOTELAPP
             {
                 ConfigureSQL sqlConnection = new ConfigureSQL();
                 sqlConnection.Sql.Open();
-                SqlCommand roomCmd = new SqlCommand("SELECT room_id FROM [RoomInventory] WHERE room_type = @name", sqlConnection.Sql);
+                SqlCommand roomCmd = new SqlCommand("SELECT room_id FROM [RoomInventory] WHERE room_type = @name AND status = 1", sqlConnection.Sql);
                 roomCmd.Parameters.AddWithValue("@name", comboBox1.GetItemText(comboBox1.SelectedItem));
                 SqlDataReader roomID = roomCmd.ExecuteReader();
                 roomID.Read();
@@ -163,10 +166,10 @@ namespace HOTELAPP
             sqlConnection.Sql.Open();
             SqlCommand command = new SqlCommand();
 
-            if (bedCountStr == "All") command = new SqlCommand("SELECT room_id, price FROM [RoomInventory]", sqlConnection.Sql);
+            if (bedCountStr == "All") command = new SqlCommand("SELECT room_id, price FROM [RoomInventory] WHERE status = 1", sqlConnection.Sql);
             else
             {
-                command = new SqlCommand("SELECT room_id, price FROM [RoomInventory] WHERE capacity = @bed", sqlConnection.Sql);
+                command = new SqlCommand("SELECT room_id, price FROM [RoomInventory] WHERE capacity = @bed AND status = 1", sqlConnection.Sql);
                 command.Parameters.AddWithValue("@bed", bedCount);
             }
             SqlDataReader reader = command.ExecuteReader();
@@ -217,12 +220,23 @@ namespace HOTELAPP
             if (index == -1) return;
             DateTime dateIn = dateTimePicker1.Value.Date;
             DateTime dateOut = dateTimePicker2.Value.Date;
+            string dateInStr = dateIn.ToString();
+            string dateOutStr = dateOut.ToString();
 
             ConfigureSQL sqlConnection = new ConfigureSQL();
             sqlConnection.Sql.Open();
 
             SqlCommand command = new SqlCommand("SELECT room_id FROM [RoomInventory] WHERE room_type = @roomname", sqlConnection.Sql);
-            string roomName = comboBox1.SelectedItem.ToString();
+            string roomName;
+            try
+            {
+                roomName = comboBox1.SelectedItem.ToString();
+
+            }
+            catch(Exception ex)
+            {
+                return;
+            }
             command.Parameters.AddWithValue("@roomname", roomName);
             SqlDataReader reader = command.ExecuteReader();
             reader.Read();
@@ -275,8 +289,72 @@ namespace HOTELAPP
                 command.Parameters.AddWithValue("@user", username);
                 command.ExecuteNonQuery();
             }
-            sqlConnection.Sql.Close();
+            command.Parameters.Clear();
+            command = new SqlCommand("SELECT email FROM [User] WHERE username = @user", sqlConnection.Sql);
+            command.Parameters.AddWithValue("@user", username);
+            reader = command.ExecuteReader();
+            reader.Read();
+            string guestMail = reader[0].ToString();
+            reader.Close();
+            
 
+            //guestMail, bedCount, dateInStr, dateOutStr, reservationId
+            
+            
+            
+            
+            
+            
+            /*
+            MailMessage message = new MailMessage(from, to);
+            message.Subject = "Using the SmtpClient class.";
+            message.Body = @"Using this feature, you can send an email message from an application very easily.";
+            MailAddress bcc = new MailAddress("manager1@contoso.com");
+            message.Bcc.Add(bcc);
+            SmtpClient client = new SmtpClient();
+            client.Credentials = CredentialCache.DefaultNetworkCredentials;
+            Console.WriteLine("Sending an email message to {0} and {1}.",
+                to.DisplayName, message.Bcc.ToString());
+
+            try
+            {
+                client.Send(message);
+            } 
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception caught in CreateBccTestMessage(): {0}",
+                    ex.ToString());
+            }
+
+            var smtpClient = new SmtpClient("smtp.gmail.com")
+            {
+                Port = 587,
+                Credentials = new NetworkCredential(reader[0].ToString(), reader[1].ToString()),
+                EnableSsl = true,
+            };
+
+            smtpClient.Send("email", "recipient", "subject", "body");
+
+            var mailMessage = new MailMessage
+            {
+                From = new MailAddress("email"),
+                Subject = "subject",
+                Body = "<h1>Your reservation has been received\r\n</h1>",
+                IsBodyHtml = true,
+            };/
+            mailMessage.To.Add("recipient");
+
+            smtpClient.Send(mailMessage);
+
+
+            */
+
+
+
+
+
+
+            sqlConnection.Sql.Close();
 
             MessageBox.Show("Reservation complete (+5 points)");
         }

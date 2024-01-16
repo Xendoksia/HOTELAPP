@@ -87,7 +87,7 @@ namespace HOTELAPP
                 insertCmd.Parameters.AddWithValue("@Name", textBox4.Text);
                 insertCmd.Parameters.AddWithValue("@Surname", textBox1.Text);
                 insertCmd.Parameters.AddWithValue("@Gender", comboBox1.Text);
-                insertCmd.Parameters.AddWithValue("@Birthday", dateTimePicker1.Text);
+                insertCmd.Parameters.AddWithValue("@Birthday", dateTimePicker1.Value.Date);
                 insertCmd.Parameters.AddWithValue("@Email", textBox2.Text);
 
                 insertCmd.ExecuteNonQuery();

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -30,26 +31,20 @@ namespace HOTELAPP
         private void ManagerWindow_Load(object sender, EventArgs e)
         {
             timer1.Start();
-        }
-
-        private void ıconButton1_Click(object sender, EventArgs e)
-        {
-            MovePanel(dashbbtn);
-            employees1.Visible= false;
-            dashboard1.Visible = true;
-            clientList1.Visible = false; 
-            pricing1.Visible = false;
-
+            
+            // SqlConnection oluştur
 
         }
+
+       
 
         private void ıconButton2_Click(object sender, EventArgs e)
         {
             MovePanel(empbtn);
             employees1.Visible= true;
-            dashboard1.Visible = false;
+            
             clientList1.Visible = false;
-            pricing1.Visible = false;
+            
 
         }
 
@@ -57,18 +52,11 @@ namespace HOTELAPP
         {
             MovePanel(clientbtn);
             employees1.Visible = false;
-            dashboard1.Visible = false;
+            
             clientList1.Visible = true;
-            pricing1.Visible = false;
+         
         }
 
-        private void ıconButton1_Click_1(object sender, EventArgs e)
-        {
-            MovePanel(ıconButton1);
-            employees1.Visible = false;
-            dashboard1.Visible = false;
-            clientList1.Visible = false;
-            pricing1.Visible = true;
-        }
+   
     }
 }

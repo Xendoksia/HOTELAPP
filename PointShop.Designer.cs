@@ -31,33 +31,24 @@
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.rjCircularPictureBox1 = new CustomControls.RJControls.RJCircularPictureBox();
-            this.rjCircularPictureBox2 = new CustomControls.RJControls.RJCircularPictureBox();
             this.rjCircularPictureBox3 = new CustomControls.RJControls.RJCircularPictureBox();
             this.rjCircularPictureBox4 = new CustomControls.RJControls.RJCircularPictureBox();
-            this.rjCircularPictureBox5 = new CustomControls.RJControls.RJCircularPictureBox();
-            this.rjCircularPictureBox6 = new CustomControls.RJControls.RJCircularPictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.rjButton2 = new CustomControls.RJControls.RJButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.ıconButton1 = new FontAwesome.Sharp.IconButton();
+            this.ıconButton2 = new FontAwesome.Sharp.IconButton();
+            this.ıconButton3 = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // rjButton1
@@ -103,28 +94,13 @@
             this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             this.rjCircularPictureBox1.BorderSize = 4;
             this.rjCircularPictureBox1.GradientAngle = 50F;
+            this.rjCircularPictureBox1.Image = global::HOTELAPP.Properties.Resources.mas;
             this.rjCircularPictureBox1.Location = new System.Drawing.Point(216, 144);
             this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
             this.rjCircularPictureBox1.Size = new System.Drawing.Size(133, 133);
             this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.rjCircularPictureBox1.TabIndex = 14;
             this.rjCircularPictureBox1.TabStop = false;
-            // 
-            // rjCircularPictureBox2
-            // 
-            this.rjCircularPictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.rjCircularPictureBox2.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.rjCircularPictureBox2.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.rjCircularPictureBox2.BorderColor2 = System.Drawing.Color.HotPink;
-            this.rjCircularPictureBox2.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.rjCircularPictureBox2.BorderSize = 4;
-            this.rjCircularPictureBox2.GradientAngle = 50F;
-            this.rjCircularPictureBox2.Location = new System.Drawing.Point(216, 371);
-            this.rjCircularPictureBox2.Name = "rjCircularPictureBox2";
-            this.rjCircularPictureBox2.Size = new System.Drawing.Size(133, 133);
-            this.rjCircularPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.rjCircularPictureBox2.TabIndex = 15;
-            this.rjCircularPictureBox2.TabStop = false;
             // 
             // rjCircularPictureBox3
             // 
@@ -135,6 +111,7 @@
             this.rjCircularPictureBox3.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             this.rjCircularPictureBox3.BorderSize = 4;
             this.rjCircularPictureBox3.GradientAngle = 50F;
+            this.rjCircularPictureBox3.Image = global::HOTELAPP.Properties.Resources.vpdinner;
             this.rjCircularPictureBox3.Location = new System.Drawing.Point(487, 144);
             this.rjCircularPictureBox3.Name = "rjCircularPictureBox3";
             this.rjCircularPictureBox3.Size = new System.Drawing.Size(133, 133);
@@ -151,44 +128,13 @@
             this.rjCircularPictureBox4.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             this.rjCircularPictureBox4.BorderSize = 4;
             this.rjCircularPictureBox4.GradientAngle = 50F;
+            this.rjCircularPictureBox4.Image = global::HOTELAPP.Properties.Resources.vpbrea;
             this.rjCircularPictureBox4.Location = new System.Drawing.Point(785, 144);
             this.rjCircularPictureBox4.Name = "rjCircularPictureBox4";
             this.rjCircularPictureBox4.Size = new System.Drawing.Size(133, 133);
             this.rjCircularPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.rjCircularPictureBox4.TabIndex = 17;
             this.rjCircularPictureBox4.TabStop = false;
-            // 
-            // rjCircularPictureBox5
-            // 
-            this.rjCircularPictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.rjCircularPictureBox5.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.rjCircularPictureBox5.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.rjCircularPictureBox5.BorderColor2 = System.Drawing.Color.HotPink;
-            this.rjCircularPictureBox5.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.rjCircularPictureBox5.BorderSize = 4;
-            this.rjCircularPictureBox5.GradientAngle = 50F;
-            this.rjCircularPictureBox5.Location = new System.Drawing.Point(487, 371);
-            this.rjCircularPictureBox5.Name = "rjCircularPictureBox5";
-            this.rjCircularPictureBox5.Size = new System.Drawing.Size(133, 133);
-            this.rjCircularPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.rjCircularPictureBox5.TabIndex = 18;
-            this.rjCircularPictureBox5.TabStop = false;
-            // 
-            // rjCircularPictureBox6
-            // 
-            this.rjCircularPictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.rjCircularPictureBox6.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.rjCircularPictureBox6.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.rjCircularPictureBox6.BorderColor2 = System.Drawing.Color.HotPink;
-            this.rjCircularPictureBox6.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.rjCircularPictureBox6.BorderSize = 4;
-            this.rjCircularPictureBox6.GradientAngle = 50F;
-            this.rjCircularPictureBox6.Location = new System.Drawing.Point(785, 371);
-            this.rjCircularPictureBox6.Name = "rjCircularPictureBox6";
-            this.rjCircularPictureBox6.Size = new System.Drawing.Size(133, 133);
-            this.rjCircularPictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.rjCircularPictureBox6.TabIndex = 19;
-            this.rjCircularPictureBox6.TabStop = false;
             // 
             // label1
             // 
@@ -219,6 +165,7 @@
             this.rjButton2.Text = "Shop Now";
             this.rjButton2.TextColor = System.Drawing.Color.White;
             this.rjButton2.UseVisualStyleBackColor = false;
+            this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
             // 
             // label3
             // 
@@ -240,9 +187,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(429, 168);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 25);
+            this.label4.Size = new System.Drawing.Size(102, 25);
             this.label4.TabIndex = 24;
-            this.label4.Text = "Free Massage";
+            this.label4.Text = "VIP Dinner";
             // 
             // label5
             // 
@@ -252,45 +199,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(707, 168);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(127, 25);
+            this.label5.Size = new System.Drawing.Size(122, 25);
             this.label5.TabIndex = 25;
-            this.label5.Text = "Free Massage";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(155, 407);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(127, 25);
-            this.label6.TabIndex = 26;
-            this.label6.Text = "Free Massage";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(429, 407);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(127, 25);
-            this.label7.TabIndex = 27;
-            this.label7.Text = "Free Massage";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(707, 407);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(127, 25);
-            this.label8.TabIndex = 28;
-            this.label8.Text = "Free Massage";
+            this.label5.Text = "VIP Breakfast";
             // 
             // label9
             // 
@@ -312,9 +223,8 @@
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(1111, 488);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(94, 25);
+            this.label10.Size = new System.Drawing.Size(0, 25);
             this.label10.TabIndex = 30;
-            this.label10.Text = "20 Points";
             // 
             // label11
             // 
@@ -352,80 +262,72 @@
             this.label12.TabIndex = 33;
             this.label12.Text = "10 Points";
             // 
-            // label13
+            // ıconButton1
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(806, 520);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(98, 24);
-            this.label13.TabIndex = 34;
-            this.label13.Text = "10 Points";
+            this.ıconButton1.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
+            this.ıconButton1.IconColor = System.Drawing.Color.Black;
+            this.ıconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ıconButton1.Location = new System.Drawing.Point(243, 342);
+            this.ıconButton1.Name = "ıconButton1";
+            this.ıconButton1.Size = new System.Drawing.Size(75, 46);
+            this.ıconButton1.TabIndex = 34;
+            this.ıconButton1.UseVisualStyleBackColor = true;
+            this.ıconButton1.Click += new System.EventHandler(this.ıconButton1_Click);
             // 
-            // label14
+            // ıconButton2
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(229, 520);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(98, 24);
-            this.label14.TabIndex = 35;
-            this.label14.Text = "10 Points";
+            this.ıconButton2.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
+            this.ıconButton2.IconColor = System.Drawing.Color.Black;
+            this.ıconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ıconButton2.Location = new System.Drawing.Point(514, 342);
+            this.ıconButton2.Name = "ıconButton2";
+            this.ıconButton2.Size = new System.Drawing.Size(75, 46);
+            this.ıconButton2.TabIndex = 35;
+            this.ıconButton2.UseVisualStyleBackColor = true;
+            this.ıconButton2.Click += new System.EventHandler(this.ıconButton2_Click);
             // 
-            // label15
+            // ıconButton3
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(502, 520);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(98, 24);
-            this.label15.TabIndex = 36;
-            this.label15.Text = "10 Points";
+            this.ıconButton3.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
+            this.ıconButton3.IconColor = System.Drawing.Color.Black;
+            this.ıconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ıconButton3.Location = new System.Drawing.Point(819, 342);
+            this.ıconButton3.Name = "ıconButton3";
+            this.ıconButton3.Size = new System.Drawing.Size(75, 46);
+            this.ıconButton3.TabIndex = 36;
+            this.ıconButton3.UseVisualStyleBackColor = true;
+            this.ıconButton3.Click += new System.EventHandler(this.ıconButton3_Click);
             // 
             // PointShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1266, 695);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.ıconButton3);
+            this.Controls.Add(this.ıconButton2);
+            this.Controls.Add(this.ıconButton1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.rjButton2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.rjCircularPictureBox6);
-            this.Controls.Add(this.rjCircularPictureBox5);
             this.Controls.Add(this.rjCircularPictureBox4);
             this.Controls.Add(this.rjCircularPictureBox3);
-            this.Controls.Add(this.rjCircularPictureBox2);
             this.Controls.Add(this.rjCircularPictureBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.rjButton1);
             this.Name = "PointShop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
+            this.Load += new System.EventHandler(this.PointShop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -436,26 +338,20 @@
         private CustomControls.RJControls.RJButton rjButton1;
         private TextBox textBox1;
         private CustomControls.RJControls.RJCircularPictureBox rjCircularPictureBox1;
-        private CustomControls.RJControls.RJCircularPictureBox rjCircularPictureBox2;
         private CustomControls.RJControls.RJCircularPictureBox rjCircularPictureBox3;
         private CustomControls.RJControls.RJCircularPictureBox rjCircularPictureBox4;
-        private CustomControls.RJControls.RJCircularPictureBox rjCircularPictureBox5;
-        private CustomControls.RJControls.RJCircularPictureBox rjCircularPictureBox6;
         private Label label1;
         private CustomControls.RJControls.RJButton rjButton2;
         private Label label3;
         private Label label4;
         private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
         private Label label9;
         private Label label10;
         private Label label11;
         private Label label2;
         private Label label12;
-        private Label label13;
-        private Label label14;
-        private Label label15;
+        private FontAwesome.Sharp.IconButton ıconButton1;
+        private FontAwesome.Sharp.IconButton ıconButton2;
+        private FontAwesome.Sharp.IconButton ıconButton3;
     }
 }

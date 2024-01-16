@@ -29,310 +29,311 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MakeReservation));
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            comboBox1 = new ComboBox();
-            dateTimePicker1 = new DateTimePicker();
-            dateTimePicker2 = new DateTimePicker();
-            textBox1 = new TextBox();
-            label1 = new Label();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            rjButton1 = new CustomControls.RJControls.RJButton();
-            rjButton2 = new CustomControls.RJControls.RJButton();
-            rjButton3 = new CustomControls.RJControls.RJButton();
-            comboBox2 = new ComboBox();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            SuspendLayout();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.rjButton1 = new CustomControls.RJControls.RJButton();
+            this.rjButton2 = new CustomControls.RJControls.RJButton();
+            this.rjButton3 = new CustomControls.RJControls.RJButton();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            pictureBox1.BackgroundImage = Properties.Resources.tek;
-            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(26, 94);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(555, 465);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Visible = false;
+            this.pictureBox1.BackgroundImage = global::HOTELAPP.Properties.Resources.tek;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 94);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(555, 465);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.BackgroundImage = Properties.Resources.çift;
-            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(26, 94);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(554, 465);
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
-            pictureBox2.Visible = false;
+            this.pictureBox2.BackgroundImage = global::HOTELAPP.Properties.Resources.çift;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(26, 94);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(554, 465);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
             // 
             // pictureBox3
             // 
-            pictureBox3.BackgroundImage = (Image)resources.GetObject("pictureBox3.BackgroundImage");
-            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox3.Location = new Point(26, 94);
-            pictureBox3.Margin = new Padding(3, 4, 3, 4);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(554, 467);
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
-            pictureBox3.Visible = false;
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(26, 94);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(554, 467);
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
             // 
             // comboBox1
             // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.Font = new Font("Arial", 15.19F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(667, 155);
-            comboBox1.Margin = new Padding(3, 4, 3, 4);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(444, 36);
-            comboBox1.TabIndex = 3;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Arial", 15.19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(667, 155);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(444, 31);
+            this.comboBox1.TabIndex = 3;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Checked = false;
-            dateTimePicker1.Font = new Font("Segoe UI Semibold", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(634, 94);
-            dateTimePicker1.Margin = new Padding(3, 4, 3, 4);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(134, 36);
-            dateTimePicker1.TabIndex = 4;
-            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
+            this.dateTimePicker1.Checked = false;
+            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(634, 94);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(134, 30);
+            this.dateTimePicker1.TabIndex = 4;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // dateTimePicker2
             // 
-            dateTimePicker2.Font = new Font("Segoe UI Semibold", 12.75F, FontStyle.Bold, GraphicsUnit.Point);
-            dateTimePicker2.Format = DateTimePickerFormat.Short;
-            dateTimePicker2.Location = new Point(774, 93);
-            dateTimePicker2.Margin = new Padding(3, 4, 3, 4);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(133, 36);
-            dateTimePicker2.TabIndex = 5;
-            dateTimePicker2.ValueChanged += dateTimePicker2_ValueChanged;
+            this.dateTimePicker2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(774, 93);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(133, 30);
+            this.dateTimePicker2.TabIndex = 5;
+            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // textBox1
             // 
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Location = new Point(707, 574);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(169, 37);
-            textBox1.TabIndex = 6;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Location = new System.Drawing.Point(707, 574);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(169, 37);
+            this.textBox1.TabIndex = 6;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(565, 565);
-            label1.Name = "label1";
-            label1.Size = new Size(136, 57);
-            label1.TabIndex = 7;
-            label1.Text = "Price :";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(565, 565);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 46);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Price :";
             // 
             // textBox2
             // 
-            textBox2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox2.Location = new Point(687, 220);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(402, 295);
-            textBox2.TabIndex = 8;
-            textBox2.Text = resources.GetString("textBox2.Text");
-            textBox2.Visible = false;
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox2.Location = new System.Drawing.Point(687, 220);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(402, 295);
+            this.textBox2.TabIndex = 8;
+            this.textBox2.Text = resources.GetString("textBox2.Text");
+            this.textBox2.Visible = false;
             // 
             // textBox3
             // 
-            textBox3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox3.Location = new Point(687, 217);
-            textBox3.Margin = new Padding(3, 4, 3, 4);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(402, 299);
-            textBox3.TabIndex = 9;
-            textBox3.Text = resources.GetString("textBox3.Text");
-            textBox3.Visible = false;
+            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox3.Location = new System.Drawing.Point(687, 217);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(402, 299);
+            this.textBox3.TabIndex = 9;
+            this.textBox3.Text = resources.GetString("textBox3.Text");
+            this.textBox3.Visible = false;
             // 
             // textBox4
             // 
-            textBox4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox4.Location = new Point(687, 217);
-            textBox4.Margin = new Padding(3, 4, 3, 4);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(402, 298);
-            textBox4.TabIndex = 10;
-            textBox4.Text = resources.GetString("textBox4.Text");
-            textBox4.Visible = false;
-            textBox4.TextChanged += textBox4_TextChanged;
+            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textBox4.Location = new System.Drawing.Point(687, 217);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(402, 298);
+            this.textBox4.TabIndex = 10;
+            this.textBox4.Text = resources.GetString("textBox4.Text");
+            this.textBox4.Visible = false;
             // 
             // rjButton1
             // 
-            rjButton1.BackColor = Color.Purple;
-            rjButton1.BackgroundColor = Color.Purple;
-            rjButton1.BackgroundImageLayout = ImageLayout.None;
-            rjButton1.BorderColor = Color.White;
-            rjButton1.BorderRadius = 10;
-            rjButton1.BorderSize = 1;
-            rjButton1.FlatAppearance.BorderSize = 0;
-            rjButton1.FlatStyle = FlatStyle.Flat;
-            rjButton1.ForeColor = Color.White;
-            rjButton1.Image = Properties.Resources.undo_21;
-            rjButton1.ImageAlign = ContentAlignment.MiddleLeft;
-            rjButton1.Location = new Point(26, 13);
-            rjButton1.Margin = new Padding(3, 4, 3, 4);
-            rjButton1.Name = "rjButton1";
-            rjButton1.Size = new Size(144, 52);
-            rjButton1.TabIndex = 11;
-            rjButton1.Text = "Go Back";
-            rjButton1.TextColor = Color.White;
-            rjButton1.UseVisualStyleBackColor = false;
-            rjButton1.Click += rjButton1_Click;
+            this.rjButton1.BackColor = System.Drawing.Color.Purple;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.Purple;
+            this.rjButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rjButton1.BorderColor = System.Drawing.Color.White;
+            this.rjButton1.BorderRadius = 10;
+            this.rjButton1.BorderSize = 1;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Image = global::HOTELAPP.Properties.Resources.undo_21;
+            this.rjButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton1.Location = new System.Drawing.Point(26, 13);
+            this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(144, 52);
+            this.rjButton1.TabIndex = 11;
+            this.rjButton1.Text = "Go Back";
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
             // 
             // rjButton2
             // 
-            rjButton2.BackColor = Color.Purple;
-            rjButton2.BackgroundColor = Color.Purple;
-            rjButton2.BackgroundImageLayout = ImageLayout.None;
-            rjButton2.BorderColor = Color.White;
-            rjButton2.BorderRadius = 10;
-            rjButton2.BorderSize = 1;
-            rjButton2.FlatAppearance.BorderSize = 0;
-            rjButton2.FlatStyle = FlatStyle.Flat;
-            rjButton2.ForeColor = Color.White;
-            rjButton2.ImageAlign = ContentAlignment.MiddleLeft;
-            rjButton2.Location = new Point(1007, 559);
-            rjButton2.Margin = new Padding(3, 4, 3, 4);
-            rjButton2.Name = "rjButton2";
-            rjButton2.Size = new Size(144, 52);
-            rjButton2.TabIndex = 12;
-            rjButton2.Text = "Reserve Now";
-            rjButton2.TextColor = Color.White;
-            rjButton2.UseVisualStyleBackColor = false;
-            rjButton2.Click += rjButton2_Click;
+            this.rjButton2.BackColor = System.Drawing.Color.Purple;
+            this.rjButton2.BackgroundColor = System.Drawing.Color.Purple;
+            this.rjButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rjButton2.BorderColor = System.Drawing.Color.White;
+            this.rjButton2.BorderRadius = 10;
+            this.rjButton2.BorderSize = 1;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.ForeColor = System.Drawing.Color.White;
+            this.rjButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton2.Location = new System.Drawing.Point(1007, 559);
+            this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(144, 52);
+            this.rjButton2.TabIndex = 12;
+            this.rjButton2.Text = "Reserve Now";
+            this.rjButton2.TextColor = System.Drawing.Color.White;
+            this.rjButton2.UseVisualStyleBackColor = false;
+            this.rjButton2.Click += new System.EventHandler(this.rjButton2_Click);
             // 
             // rjButton3
             // 
-            rjButton3.BackColor = Color.Purple;
-            rjButton3.BackgroundColor = Color.Purple;
-            rjButton3.BackgroundImageLayout = ImageLayout.None;
-            rjButton3.BorderColor = Color.White;
-            rjButton3.BorderRadius = 10;
-            rjButton3.BorderSize = 1;
-            rjButton3.FlatAppearance.BorderSize = 0;
-            rjButton3.FlatStyle = FlatStyle.Flat;
-            rjButton3.ForeColor = Color.White;
-            rjButton3.ImageAlign = ContentAlignment.MiddleLeft;
-            rjButton3.Location = new Point(1019, 93);
-            rjButton3.Margin = new Padding(3, 4, 3, 4);
-            rjButton3.Name = "rjButton3";
-            rjButton3.Size = new Size(144, 36);
-            rjButton3.TabIndex = 13;
-            rjButton3.Text = "Search Rooms";
-            rjButton3.TextColor = Color.White;
-            rjButton3.UseVisualStyleBackColor = false;
-            rjButton3.Click += rjButton3_Click;
+            this.rjButton3.BackColor = System.Drawing.Color.Purple;
+            this.rjButton3.BackgroundColor = System.Drawing.Color.Purple;
+            this.rjButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rjButton3.BorderColor = System.Drawing.Color.White;
+            this.rjButton3.BorderRadius = 10;
+            this.rjButton3.BorderSize = 1;
+            this.rjButton3.FlatAppearance.BorderSize = 0;
+            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton3.ForeColor = System.Drawing.Color.White;
+            this.rjButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton3.Location = new System.Drawing.Point(1019, 93);
+            this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton3.Name = "rjButton3";
+            this.rjButton3.Size = new System.Drawing.Size(144, 36);
+            this.rjButton3.TabIndex = 13;
+            this.rjButton3.Text = "Search Rooms";
+            this.rjButton3.TextColor = System.Drawing.Color.White;
+            this.rjButton3.UseVisualStyleBackColor = false;
+            this.rjButton3.Click += new System.EventHandler(this.rjButton3_Click);
             // 
             // comboBox2
             // 
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.Font = new Font("Arial", 15.19F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "All", "3 Beds", "2 Beds", "1 Bed" });
-            comboBox2.Location = new Point(913, 93);
-            comboBox2.Margin = new Padding(3, 4, 3, 4);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(100, 36);
-            comboBox2.TabIndex = 14;
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.Font = new System.Drawing.Font("Arial", 15.19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "All",
+            "3 Beds",
+            "2 Beds",
+            "1 Bed"});
+            this.comboBox2.Location = new System.Drawing.Point(913, 93);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(100, 31);
+            this.comboBox2.TabIndex = 14;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(913, 61);
-            label2.Name = "label2";
-            label2.Size = new Size(81, 28);
-            label2.TabIndex = 15;
-            label2.Text = "Choose:";
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(913, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 21);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Choose:";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(634, 62);
-            label3.Name = "label3";
-            label3.Size = new Size(89, 28);
-            label3.TabIndex = 16;
-            label3.Text = "Check In:";
-            label3.Click += label3_Click;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(634, 62);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 21);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Check In:";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(774, 62);
-            label4.Name = "label4";
-            label4.Size = new Size(106, 28);
-            label4.TabIndex = 17;
-            label4.Text = "Check Out:";
-            label4.Click += label4_Click;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(774, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 21);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Check Out:";
             // 
             // MakeReservation
             // 
-            AutoScaleDimensions = new SizeF(9F, 23F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1266, 695);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(comboBox2);
-            Controls.Add(rjButton3);
-            Controls.Add(rjButton2);
-            Controls.Add(rjButton1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(label1);
-            Controls.Add(textBox1);
-            Controls.Add(dateTimePicker2);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(comboBox1);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
-            Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "MakeReservation";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form4";
-            Load += Form4_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1266, 695);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.rjButton3);
+            this.Controls.Add(this.rjButton2);
+            this.Controls.Add(this.rjButton1);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "MakeReservation";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Form4";
+            this.Load += new System.EventHandler(this.Form4_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

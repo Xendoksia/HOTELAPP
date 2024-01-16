@@ -23,35 +23,19 @@ namespace HOTELAPP
 
         private void Form_Load(object sender, EventArgs e)
         {
-            LoadDataIntoDataGridView();
+            ConfigureSQL sqlConnection = new ConfigureSQL();
+            sqlConnection.Sql.Open();
+            SqlCommand query = new SqlCommand("SELECT name, surname, gender, role FROM [User] WHERE role = 'Staff' OR role = 'Manager'", sqlConnection.Sql);
+            SqlDataAdapter adapter = new SqlDataAdapter(query);
+            DataTable dataTable = new DataTable();
+            adapter.Fill(dataTable);
+
+            // DataGridView'e DataTable'ı bağla
+            dataGridView1.DataSource = dataTable;
+            
         }
 
-        private void LoadDataIntoDataGridView()
-        {
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                try
-                {
-                    connection.Open();
-
-                    string query = "SELECT * FROM YourTableName"; 
-
-                    using (SqlCommand command = new SqlCommand(query, connection))
-                    {
-                        SqlDataAdapter adapter = new SqlDataAdapter(command);
-                        DataTable dataTable = new DataTable();
-                        adapter.Fill(dataTable);
-
-                        
-                        dataGridView1.DataSource = dataTable;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
-                }
-            }
-        }
+        
 
         private void rjButton1_Click(object sender, EventArgs e)
         {

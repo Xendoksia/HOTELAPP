@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using System.Data.SqlClient;
 
 
 namespace HOTELAPP
@@ -51,7 +52,27 @@ namespace HOTELAPP
 
         private void Form3_Load(object sender, EventArgs e)
         {
+            ConfigureSQL sqlConnection = new ConfigureSQL();
+            sqlConnection.Sql.Open();
+            SqlCommand roomCmd = new SqlCommand("SELECT loyalty_points FROM [RewardLoyalty] ", sqlConnection.Sql);
+            roomCmd.Parameters.AddWithValue("@guestname", label5.Text); 
+            SqlDataReader loyal = roomCmd.ExecuteReader();
+            if (loyal.Read())  
+            {
+                
+                int loyaltyPoints = loyal.GetInt32(0);
 
+                
+                label5.Text = "Loyalty Points: " + loyaltyPoints.ToString();
+            }
+            else
+            {
+                // Handle the case where no loyalty points are found for the given room type
+                label5.Text = "No loyalty points found for room type: " + label5.Text;
+            }
+
+            loyal.Close();
+            sqlConnection.Sql.Close();  // Close the connection after using it
         }
 
         private void button2_Click(object sender, EventArgs e)

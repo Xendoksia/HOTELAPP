@@ -105,6 +105,8 @@ namespace HOTELAPP
         {
             manageRooms1.Visible = true;
             addNewManualReservation1.Visible= false;
+            label1.Visible= false;
+            label3.Visible= false;
             
 
         }
@@ -114,6 +116,8 @@ namespace HOTELAPP
         {
             addNewManualReservation1.Visible= true;
             manageRooms1.Visible= false;
+            label1.Visible = false;
+            label3.Visible = false;
         }
     }
 }
