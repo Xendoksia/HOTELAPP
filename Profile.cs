@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using System.Data.SqlClient;
 
 
 namespace HOTELAPP
@@ -56,6 +57,28 @@ namespace HOTELAPP
             textBox1.ReadOnly = true;
             textBox4.ReadOnly = true;
             textBox5.ReadOnly = true;
+
+            ConfigureSQL sqlConnection = new ConfigureSQL();
+            sqlConnection.Sql.Open();
+
+            
+            SqlCommand command = new SqlCommand("SELECT username, name, surname, gender, email, birthday FROM [User]", sqlConnection.Sql);
+
+            SqlDataReader reader = command.ExecuteReader();
+
+            if (reader.Read())
+            {
+                textBox1.Text = reader["name"].ToString();
+                textBox2.Text = reader["surname"].ToString();
+                textBox3.Text = reader["email"].ToString();
+                textBox4.Text = reader["gender"].ToString();
+                textBox5.Text = reader["birthday"].ToString();
+                textBox6.Text = reader["username"].ToString();
+                
+            }
+
+            reader.Close();
+            sqlConnection.Sql.Close();
         }
 
         private void rjCircularPictureBox1_Click(object sender, EventArgs e)
@@ -67,7 +90,14 @@ namespace HOTELAPP
         private void rjButton1_Click(object sender, EventArgs e)
         {
             Form3 pr = new Form3(username);//Create the new form
-            pr.Show();//display Form2 to the user
+            pr.Show();
+            this.Close();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ReservationHistory pr = new ReservationHistory(username);//Create the new form
+            pr.Show();
             this.Close();
         }
     }

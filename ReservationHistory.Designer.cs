@@ -56,6 +56,7 @@
             this.rjButton1.Text = "Go Back";
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
             // rjButton2
             // 
