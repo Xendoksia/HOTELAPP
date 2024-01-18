@@ -259,39 +259,16 @@ namespace HOTELAPP
             command.Parameters.AddWithValue("@roomid", roomid);
             command.Parameters.AddWithValue("@in", dateIn);
             command.Parameters.AddWithValue("@out", dateOut);
-            command.ExecuteNonQuery();
+            command.ExecuteNonQuery(); // also adds loyalty points with trigger
 
-            command = new SqlCommand("UPDATE [ReservationIDCounter] SET id = @id", sqlConnection.Sql);
-            command.Parameters.AddWithValue("@id", reservationId);
+            
+            command = new SqlCommand("EXEC NewID", sqlConnection.Sql); // stored procedure
             command.ExecuteNonQuery();
 
             comboBox1.Items.Clear();
             comboBox1.Items.Insert(0, "Please Select a Room Type");
             comboBox1.SelectedIndex = 0;
 
-            try // earning points
-            {
-                command.Parameters.Clear();
-                command = new SqlCommand("SELECT loyalty_points FROM [RewardLoyalty] WHERE guestname = @user", sqlConnection.Sql);
-                command.Parameters.AddWithValue("@user", username);
-                reader = command.ExecuteReader();
-                reader.Read();
-                int points = int.Parse(reader[0].ToString()) + 5;
-                reader.Close();
-                command.Parameters.Clear();
-                command = new SqlCommand("UPDATE [RewardLoyalty] SET loyalty_points = @newpoint WHERE guestname = @user", sqlConnection.Sql);
-                command.Parameters.AddWithValue("@user", username);
-                command.Parameters.AddWithValue("@newpoint", points);
-                command.ExecuteNonQuery();
-            }
-            catch (Exception Ex)
-            {
-                reader.Close();
-                command.Parameters.Clear();
-                command = new SqlCommand("INSERT INTO [RewardLoyalty](guestname, loyalty_points) VALUES (@user, 5)", sqlConnection.Sql);
-                command.Parameters.AddWithValue("@user", username);
-                command.ExecuteNonQuery();
-            }
             command.Parameters.Clear();
             command = new SqlCommand("SELECT email FROM [User] WHERE username = @user", sqlConnection.Sql);
             command.Parameters.AddWithValue("@user", username);
