@@ -12,7 +12,6 @@ namespace HOTELAPP
     public partial class MakeReservation : Form
     {
         string username;
-        List<string> price = new List<string>();
 
         public MakeReservation(string user)
         {
@@ -65,12 +64,12 @@ namespace HOTELAPP
             {
                 ConfigureSQL sqlConnection = new ConfigureSQL();
                 sqlConnection.Sql.Open();
-                SqlCommand roomCmd = new SqlCommand("SELECT room_id FROM [RoomInventory] WHERE room_type = @name AND status = 1", sqlConnection.Sql);
-                roomCmd.Parameters.AddWithValue("@name", comboBox1.GetItemText(comboBox1.SelectedItem));
-                SqlDataReader roomID = roomCmd.ExecuteReader();
-                roomID.Read();
+                SqlCommand command = new SqlCommand("SELECT price FROM [RoomInventory] WHERE room_type = @name AND status = 1", sqlConnection.Sql);
+                command.Parameters.AddWithValue("@name", comboBox1.GetItemText(comboBox1.SelectedItem));
+                SqlDataReader reader = command.ExecuteReader();
+                reader.Read();
 
-                int i = int.Parse(roomID[0].ToString());
+                /*int i = int.Parse(roomID[0].ToString());
                 switch (i)
                 {
                     case 0:
@@ -100,7 +99,12 @@ namespace HOTELAPP
                         textBox1.Visible = true;
                         textBox1.Text = price[i] + " per night";
                         break;
-                }
+                }*/
+
+                pictureBox3.Visible = true;
+                textBox4.Visible = true;
+                textBox1.Visible = true;
+                textBox1.Text = reader[0] + " per night";
 
                 sqlConnection.Sql.Close();
             }
@@ -178,7 +182,6 @@ namespace HOTELAPP
             while (reader.Read())
             {
                 roomids.Add(reader[0].ToString());
-                price.Add(reader[1].ToString());
             }
             reader.Close();
 
@@ -199,7 +202,7 @@ namespace HOTELAPP
             }
             reader.Close();
 
-            command = new SqlCommand("SELECT room_type, price FROM [RoomInventory] WHERE room_id = @id", sqlConnection.Sql);
+            command = new SqlCommand("SELECT room_type FROM [RoomInventory] WHERE room_id = @id", sqlConnection.Sql);
             foreach (string type in roomids)
             {
                 command.Parameters.AddWithValue("@id", type);
@@ -233,7 +236,7 @@ namespace HOTELAPP
                 roomName = comboBox1.SelectedItem.ToString();
 
             }
-            catch(Exception ex)
+            catch(Exception Ex)
             {
                 return;
             }
@@ -281,7 +284,7 @@ namespace HOTELAPP
                 command.Parameters.AddWithValue("@newpoint", points);
                 command.ExecuteNonQuery();
             }
-            catch (Exception ex)
+            catch (Exception Ex)
             {
                 reader.Close();
                 command.Parameters.Clear();
@@ -348,11 +351,6 @@ namespace HOTELAPP
 
 
             */
-
-
-
-
-
 
             sqlConnection.Sql.Close();
 

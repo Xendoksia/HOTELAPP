@@ -94,7 +94,7 @@ namespace HOTELAPP
                 }
                 MessageBox.Show("not found");
             }
-            catch (Exception ex)
+            catch (Exception Ex)
             {
                 MessageBox.Show("sql yüklenemedi");
             }

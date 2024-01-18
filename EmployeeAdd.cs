@@ -45,7 +45,7 @@ namespace HOTELAPP
 
                 this.Close();
             }
-            catch (Exception ex)
+            catch (Exception Ex)
             {
                 if (sqlConnection == null)
                     MessageBox.Show("Couldn't access the Database");
